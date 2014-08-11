@@ -1,0 +1,98 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->		
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>Typography</h1>
+	</div><!--/ .page-header-->		
+		
+	<div class="sixteen columns">
+
+		<h1>H1 Lorem ipsum dolor sit amet</h1>
+
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+		</p>
+
+		<h2>H2 Lorem ipsum dolor sit amet</h2>
+
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+		</p>
+
+		<h3>H3 Lorem ipsum dolor sit amet</h3>
+
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+		</p>
+
+		<h4>H4 Lorem ipsum dolor sit amet</h4>
+
+		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+		</p>
+
+		<h5>H5 Lorem ipsum dolor sit amet</h5>
+
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+		</p>
+
+		<h6>H6 Lorem ipsum dolor sit amet</h6>
+
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+		</p>
+
+	</div><!--/ .columns-->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

@@ -1,0 +1,219 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>pages splitting <br /> into columns</h1>
+	</div><!--/ .page-header-->	
+	
+	<div class="eight columns row">
+
+		<h6>1/2 Column</h6>
+		<span class="dropcapcircle">1</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet
+			tristique erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum 
+			primis in faucibus orcluctus et ultrices posuere cubilia mattis elit porttitor. Vestibulum ante ipsum.
+		</p>
+
+	</div><!--/ .columns -->
+
+	<div class="eight columns row">
+
+		<h6>1/2 Column</h6>
+		<span class="dropcapcircle">2</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet
+			tristique erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum 
+			primis in faucibus orcluctus et ultrices posuere cubilia mattis elit porttitor. Vestibulum ante ipsum.
+		</p>
+
+	</div><!--/ .columns -->
+
+	<div class="one-third column row">
+
+		<h6>1/3 Column</h6>
+		<span class="dropcapcircle">1</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet
+			tristique erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum 
+			primis in faucibus orcluctus et ultrices posuere cubilia. 
+		</p>
+
+	</div><!--/ .columns -->
+
+	<div class="one-third column row">
+
+		<h6>1/3 Column</h6>
+		<span class="dropcapcircle">2</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet
+			tristique erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum 
+			primis in faucibus orcluctus et ultrices posuere cubilia. 
+		</p>
+
+	</div><!--/ .columns -->
+
+	<div class="one-third column row">
+
+		<h6>1/3 Column </h6>
+		<span class="dropcapcircle">3</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet
+			tristique erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum 
+			primis in faucibus orcluctus et ultrices posuere cubilia. 
+		</p>
+
+	</div><!--/ .columns -->
+
+	<div class="sixteen columns row">
+
+		<h6>16 Columns </h6>
+		<span class="dropcapcircle">1</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+			erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in 
+			faucibus orcluctus et ultrices posuere cubilia mattis elit porttitor. 	Aliquam hendrit
+			rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique erosam amet. 
+			Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in faucibus orcluctus
+			et ultrices posuere cubilia mattis elit porttitor. Aliquam hendrit rutrum iaculis nullam
+			ondimentum maluada velit beum donec sit amet tristique erosam amet. Risus mollis malesuada 
+			quis quis nulla. Vestibulum ante ipsum primis in faucibus orcluctus et ultrices posuere 
+			cubilia mattis elit porttitor ante ipsum primis in faucibus. 
+		</p>
+
+	</div><!--/ .columns-->
+
+	<div class="four columns row">
+
+		<h6>1/4 Column </h6>
+		<span class="dropcapcircle">1</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+			erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum. 
+		</p>
+
+	</div><!--/ columns-->
+
+	<div class="four columns row">
+
+		<h6>1/4 Column </h6>
+		<span class="dropcapcircle">2</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+			erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum. 
+		</p>
+
+	</div><!--/ .columns-->
+
+	<div class="four columns row">
+
+		<h6>1/4 Column </h6>
+		<span class="dropcapcircle">3</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+			erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum. 
+		</p>
+
+	</div><!--/ columns-->
+
+	<div class="four columns row">
+
+		<h6>1/4 Column </h6>
+		<span class="dropcapcircle">4</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+			erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum. 
+		</p>
+
+	</div><!--/ columns-->
+
+	<div class="twelve columns row">
+
+		<h6>12 Columns </h6>
+		<span class="dropcapcircle">1</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet 
+			tristique erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis
+			in faucibus orcluctus et ultrices posuere cubilia mattis elit porttitor. Aliquam hendrit
+			rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique erosam amet. 
+			Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in faucibus orcluctus 
+			et ultrices posuere cubilia mattis elit porttitor. Vestibulum ante ipsum primis in faucibus orcluctus 
+			et ultrices posuere cubilia.
+		</p>
+
+	</div><!--/ columns-->
+
+	<div class="four columns row">
+
+		<h6>1/4 Column </h6>
+		<span class="dropcapcircle">2</span>
+
+		<p>
+			Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+			erosam amet. Risus mollis malesuada quis quis nulla. Vestibulum. 
+		</p>
+
+	</div><!--/ columns-->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

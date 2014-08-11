@@ -1,0 +1,231 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	
+	<div class="page-header clearfix">
+		
+		<h1>Gallery <br /> 3 Columns</h1>
+		
+		<!-- - - - - - - - - Portfolio Filter - - - - - - - - - - - -->	
+		
+		<ul id="gallery-filter" class="gallery-filter">
+			<li><a data-categories="*">All</a></li>
+			<li><a data-categories="photography">Photography</a></li>
+			<li><a data-categories="wedding">Wedding</a></li>
+			<li><a data-categories="fashion">Fashion</a></li>
+			<li><a data-categories="interior">Interior</a></li>
+			<li><a data-categories="design">Design</a></li>
+			<li><a data-categories="video">Video</a></li>
+		</ul><!--/ #portfolio-filter -->			
+			
+		<!-- - - - - - - - end Portfolio Filter - - - - - - - - - - -->		
+		
+	</div><!--/ .page-header-->	
+	
+	<section id="gallery-items" class="gallery-items clearfix">
+		
+		<article class="one-third column" data-categories="fashion photography">
+
+			<div class="project-thumb">
+
+				<a href="images/full/2.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/1.jpg">
+				</a>
+
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Fashion Model Vintage Image</h6>
+					<span class="categories">Fashion / Photography</span>
+				</a>	
+				
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="video">
+
+			<div class="project-thumb">
+
+				<a href="http://player.vimeo.com/video/12158329" class="single-image video-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/2.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Swinning Bride</h6>
+					<span class="categories">Video</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="fashion photography">
+
+			<div class="project-thumb">
+
+				<a href="images/full/3.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/3.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Beautiful Woman Wearing Jewelry</h6>
+					<span class="categories">Fashion / Photography</span>
+				</a>		
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="interior design">
+
+			<div class="project-thumb">
+
+				<a href="images/full/23.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/4.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Big Window Wall</h6>
+					<span class="categories">Interior / Design</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="fashion photography">
+
+			<div class="project-thumb">
+
+				<a href="images/full/9.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/5.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Beautiful Fashion Model</h6>
+					<span class="categories">Fashion / Photography</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="wedding photography">
+
+			<div class="project-thumb">
+
+				<a href="images/full/16.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/6.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Bride with Bridesmaids</h6>
+					<span class="categories">Wedding / Photography</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="interior design">
+
+			<div class="project-thumb">
+
+				<a href="images/full/24.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/7.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Room Interior</h6>
+					<span class="categories">Interior / Design</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="wedding photography">
+
+			<div class="project-thumb">
+
+				<a href="images/full/20.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/8.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Blond Fashion Model</h6>
+					<span class="categories">Wedding / Photography</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+		<article class="one-third column" data-categories="video">
+
+			<div class="project-thumb">
+
+				<a href="http://player.vimeo.com/video/12158329" class="single-image video-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/9.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h6 class="title">Blond Hairbeautiful Woman</h6>
+					<span class="categories">Video</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .column-->	
+		
+	</section><!--/ #gallery-items-->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

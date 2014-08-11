@@ -1,0 +1,139 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->		
+
+<div class="container ajax">
+
+	<div class="page-header">
+		<h1>would like <br /> to hear from you</h1>
+	</div><!--/ .page-header-->
+
+	<section id="main" class="twelve columns">
+
+		<div class="google_map"></div>
+
+		<div class="ten columns alpha">
+
+			<h3 class="section-title">Let’s Keep in Touch</h3>
+
+			<form method="post" action="/" class="contact-form">
+
+				<p class="message-form-name">
+					<input type="text" placeholder="Your Name *" required="" name="name" />
+				</p>
+
+				<p class="message-form-email">
+					<input type="email" placeholder="E-mail *" required="" name="email" />
+				</p>
+
+				<p class="message-form-url">
+					<input type="url" placeholder="Website" name="website" />
+				</p>
+
+				<p class="message-form-message">
+					<textarea placeholder="Message *" required="" name="message"></textarea>	
+				</p>
+
+				<p class="form-submit">
+					<input type="submit" value="Submit" id="submit" name="submit">
+				</p>
+
+			</form><!--/ .contact-form-->	
+
+		</div><!--/ .columns-->
+
+	</section><!--/ #main-->
+
+	<aside id="sidebar" class="four columns">
+
+		<div class="widget widget_text">
+
+			<h3 class="widget-title">About Our Wedding</h3>
+
+			<div class="textwidget">
+
+				<p>
+					Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in 
+					faucibus orci luctus et ultrices posuere cubilia mattis vel elit porttitor
+					euismod pharetra sem interdum. 
+				</p>
+
+			</div><!--/ .textwidget-->
+
+		</div><!--/ .widget-->
+
+		<div class="widget widget_search">
+
+			<form action="#" method="post">
+
+				<p>
+					<input type="search" id="s">
+					<button class="submit-search" type="submit">Search</button>
+				</p>
+
+			</form>
+
+		</div><!--/ .widget-->
+
+		<div class="widget widget_categories">
+
+			<h3 class="widget-title">Categories</h3>
+
+			<ul>
+				<li><a href="blog.html">Wedding Ceremony</a></li>
+				<li><a href="blog.html">Responsive Design</a></li>
+				<li><a href="blog.html">Video</a></li>
+			</ul>
+
+		</div><!--/ .widget-->
+
+	</aside><!--/ #sidebar-->
+
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

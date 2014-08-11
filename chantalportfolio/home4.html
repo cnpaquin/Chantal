@@ -1,0 +1,173 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="ajax">
+	
+	<div class="scroll-box">
+
+		<div class="grid">
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/28.jpg" rel="grid">
+							<img src="images/slides/mix/1.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Fashion Model Vintage Image</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/28.jpg" rel="grid">
+							<img src="images/slides/mix/2.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Simple Brown Chair</h5>
+							<span>Interior / Design</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/28.jpg" rel="grid">
+							<img src="images/slides/mix/3.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Blond Fashion Model</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/28.jpg" rel="grid">
+							<img src="images/slides/mix/4.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Big Window Wall</h5>
+							<span>Interior / Design</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/39.jpg" rel="grid">
+							<img src="images/slides/mix/5.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Wavy Building</h5>
+							<span>Architecture / Design</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/36.jpg" rel="grid">
+							<img src="images/slides/mix/6.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Self Adhesive</h5>
+							<span>Print / Design</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+		</div><!--/ .grid-->
+
+	</div><!--/ .scroll-box-->
+	
+</div><!--/ .ajax-->

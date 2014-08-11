@@ -1,0 +1,92 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="ajax">
+	
+	<div class="epic-wrapper">
+		
+		<div id="epicSlider" class="epicSlider theme-default slider-wrapper">
+
+			<div id="slides">
+				<img src="images/epicslides/slide-1.jpg" alt="" title="#caption-1" />
+				<img src="images/epicslides/slide-2.jpg" alt="" title="#caption-2" />
+				<img src="images/epicslides/slide-3.jpg" alt="" title="#caption-3" />
+				<img src="images/epicslides/slide-4.jpg" alt="" title="#caption-4" />
+			</div><!--/ #slides-->
+
+			<div id="caption-1" class="epic-caption epic-caption-boxed left-position">
+
+				<h2>welcome to almera studio</h2>
+
+			</div><!--/ .epic-caption-->
+
+			<div id="caption-2" class="epic-caption epic-caption-bordered">
+
+				<h1>As many  galleries as you wish</h1>
+
+			</div><!--/ .epic-caption-->
+
+			<div id="caption-3" class="epic-caption epic-caption-boxed right-position">
+
+				<h2>Ajax content loading</h2>
+
+			</div><!--/ .epic-caption-->
+
+			<div id="caption-4" class="epic-caption epic-caption-white">
+
+				<h2>perfectly fits for portfolio, </h2><br />
+				<h2>wedding album, or any type of</h2><br />
+				<h2>business projects</h2>
+
+			</div><!--/ .epic-caption-->
+
+		</div><!--/ #epicSlider-->		
+		
+	</div>
+		
+</div><!--/ .ajax-->

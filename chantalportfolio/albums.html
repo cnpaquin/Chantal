@@ -1,0 +1,376 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->		
+
+<div class="container ajax">
+
+	<div class="page-header">
+
+		<h1>Colorful moments <br /> of life</h1>
+		<div id="close" class="tp-back">Back</div>
+
+	</div><!--/ .page-header-->
+	
+	<div class="albums-items">
+
+		<ul id="tp-grid" class="tp-grid">
+
+			<!-- Fashion -->
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/7.jpg" rel="fashion">
+						<img src="images/albums/fashion/8.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Fashion Beauty Portrait</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/3.jpg" rel="fashion">
+						<img src="images/albums/fashion/7.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Beautiful Woman Wearing Jewelry</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/1.jpg" rel="fashion">
+						<img src="images/albums/fashion/6.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Stylish Portrait of Beautiful Model</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/10.jpg" rel="fashion">
+						<img src="images/albums/fashion/5.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Beautiful Brunette</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/6.jpg" rel="fashion">
+						<img src="images/albums/fashion/4.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Intense Look</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/9.jpg" rel="fashion">
+						<img src="images/albums/fashion/3.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Beautiful Fashion Model</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/2.jpg" rel="fashion">
+						<img src="images/albums/fashion/2.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Fashion Model Vintage Image</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Fashion">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/4.jpg" rel="fashion">
+						<img src="images/albums/fashion/1.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Models in Different Poses</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+
+			<!-- Wedding -->
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/15.jpg" rel="wedding">
+						<img src="images/albums/wedding/6.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Swinning Bride</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/19.jpg" rel="wedding">
+						<img src="images/albums/wedding/5.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">I Love You</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/14.jpg" rel="wedding">
+						<img src="images/albums/wedding/4.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Beautiful Bride</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/12.jpg" rel="wedding">
+						<img src="images/albums/wedding/3.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Bride with Flowers</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/16.jpg" rel="wedding">
+						<img src="images/albums/wedding/2.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Bride with Bridesmaids</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Wedding">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/22.jpg" rel="wedding">
+						<img src="images/albums/wedding/1.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Wedding Bouquet</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+
+			<!-- Interior -->
+			<li data-pile="Interior">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/24.jpg" rel="interior">
+						<img src="images/albums/interior/5.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Room Interior</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Interior">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/29.jpg" rel="interior">
+						<img src="images/albums/interior/4.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Nice Wood Chair</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Interior">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/25.jpg" rel="interior">
+						<img src="images/albums/interior/3.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Clean Interior</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Interior">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/32.jpg" rel="interior">
+						<img src="images/albums/interior/2.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Modern Lounge</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Interior">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/31.jpg" rel="interior">
+						<img src="images/albums/interior/1.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">White Interior Elements</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+
+			<!-- Print Design -->
+			<li data-pile="Print Design">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/36.jpg" rel="print">
+						<img src="images/albums/print/4.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Self Adhesive</h6>
+						<span class="categories">Print / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Print Design">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/35.jpg" rel="print">
+						<img src="images/albums/print/3.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Shopping</h6>
+						<span class="categories">Print / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Print Design">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/34.jpg" rel="print">
+						<img src="images/albums/print/2.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Paper Ephemera</h6>
+						<span class="categories">Print / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Print Design">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/33.jpg" rel="print">
+						<img src="images/albums/print/1.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Paper Ephemera</h6>
+						<span class="categories">Print / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+
+			<!-- Architecture -->
+			<li data-pile="Architecture">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/38.jpg" rel="architecture">
+						<img src="images/albums/architecture/4.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Corner Windows</h6>
+						<span class="categories">Architecture / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Architecture">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/37.jpg" rel="architecture">
+						<img src="images/albums/architecture/3.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Building with Windows</h6>
+						<span class="categories">Architecture / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Architecture">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/40.jpg" rel="architecture">
+						<img src="images/albums/architecture/2.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Modern Foot Bridge</h6>
+						<span class="categories">Architecture / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+			<li data-pile="Architecture">
+				<div class="project-thumb">
+					<a class="single-image plus-icon animTop" href="images/full/39.jpg" rel="architecture">
+						<img src="images/albums/architecture/1.jpg" />
+					</a>
+					<a href="gallery-single.html" class="project-meta">
+						<h6 class="title">Wavy Building</h6>
+						<span class="categories">Architecture / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->	
+			</li>
+
+		</ul><!--/ #tp-grid-->	
+
+	</div><!--/ .albums-items-->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

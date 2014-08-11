@@ -1,0 +1,298 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="ajax">
+	
+	<ul class="scroll-box-nav">
+		<li class="active"><a href="home.html">Fashion</a></li>
+		<li><a href="home2.html">Wedding</a></li>
+		<li><a href="home3.html">Interior</a></li>
+	</ul><!--/ .scroll-box-nav-->
+	
+	<div class="scroll-box">
+
+		<div class="grid">
+
+			<div class="gr-box">
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/9.jpg" rel="grid">
+							<img src="images/slides/fashion/1.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Beautiful Fashion Model</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/8.jpg" rel="grid">
+							<img src="images/slides/fashion/2.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Blond Fashion Model</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+				<div class="item large">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/4.jpg" rel="grid">
+							<img src="images/slides/fashion/3.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Models in Different Poses</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/10.jpg" rel="grid">
+							<img src="images/slides/fashion/4.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Beautiful Brunette</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box"> 
+
+				<div class="item large">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/6.jpg" rel="grid">
+							<img src="images/slides/fashion/5.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Intense Look</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/5.jpg" rel="grid">
+							<img src="images/slides/fashion/6.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Chess Girl</h5>
+							<span>Fashion / Photography</span>
+						</a>		
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/3.jpg" rel="grid">
+							<img src="images/slides/fashion/7.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Beautiful Woman Wearing Jewelry</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item fullheight">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/2.jpg" rel="grid">
+							<img src="images/slides/fashion/12.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Fashion Model Vintage Image</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->	
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/9.jpg" rel="grid">
+							<img src="images/slides/fashion/1.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Beautiful Fashion Model</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/8.jpg" rel="grid">
+							<img src="images/slides/fashion/2.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Blond Fashion Model</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box"> 
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/7.jpg" rel="grid">
+							<img src="images/slides/fashion/8.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Fashion Beauty Portrait</h5>
+							<span>Fashion / Photography</span>
+						</a>		
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item half">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/4.jpg" rel="grid">
+							<img src="images/slides/fashion/9.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Sexy Girl</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+				<div class="item large">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/1.jpg" rel="grid">
+							<img src="images/slides/fashion/10.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Stylish Portrait of Beautiful Model</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+			<div class="gr-box">
+
+				<div class="item full">
+
+					<figure class="gr-figure">
+						<a class="gr-lightbox single-image plus-icon animTop" href="images/full/2.jpg" rel="grid">
+							<img src="images/slides/fashion/11.jpg" alt="">
+						</a>
+
+						<a href="gallery-single.html" class="gr-caption">
+							<h5>Fashion Model Vintage Image</h5>
+							<span>Fashion / Photography</span>
+						</a>	
+					</figure><!--/ .gr-figure-->
+
+				</div><!--/ .item-->
+
+			</div><!--/ .gr-box-->
+
+		</div><!--/ .grid-->
+
+	</div><!--/ .scroll-box-->
+	
+</div><!--/ .ajax-->

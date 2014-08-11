@@ -1,0 +1,107 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>Thumbnails</h1>
+	</div><!--/ .page-header-->		
+
+	<ul id="thumbnails" class="thumbnails-items clearfix">
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/1.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/2.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/3.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/4.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/5.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/6.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/7.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/8.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/9.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/10.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/11.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/12.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/13.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/14.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/15.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/16.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/17.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/18.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/19.jpg" alt="" /></a></li>
+		<li class="two columns"><a class="single-image" href="#"><img src="images/thumbnails/20.jpg" alt="" /></a></li>
+	</ul><!--/ #thumbnails-->
+	
+	<div class="activeSlider">
+		<div class="sudo">
+			<ul>				
+				<li><img src="images/full/10.jpg" alt=""/></li>
+				<li><img src="images/full/19.jpg" alt=""/></li>
+				<li><img src="images/full/20.jpg" alt=""/></li>
+				<li><img src="images/full/31.jpg" alt=""/></li>
+				<li><img src="images/full/14.jpg" alt=""/></li>
+				<li><img src="images/full/6.jpg" alt=""/></li>
+				<li><img src="images/full/5.jpg" alt=""/></li>
+				<li><img src="images/full/23.jpg" alt=""/></li>
+				<li><img src="images/full/1.jpg" alt=""/></li>
+				<li><img src="images/full/4.jpg" alt=""/></li>
+				<li><img src="images/full/11.jpg" alt=""/></li>
+				<li><img src="images/full/9.jpg" alt=""/></li>
+				<li><img src="images/full/15.jpg" alt=""/></li>
+				<li><img src="images/full/21.jpg" alt=""/></li>
+				<li><img src="images/full/26.jpg" alt=""/></li>
+				<li><img src="images/full/16.jpg" alt=""/></li>
+				<li><img src="images/full/7.jpg" alt=""/></li>
+				<li><img src="images/full/12.jpg" alt=""/></li>
+				<li><img src="images/full/2.jpg" alt=""/></li>
+				<li><img src="images/full/3.jpg" alt=""/></li>
+			</ul>
+		</div><!--/ .sudo-->
+	</div><!--/ .activeSlider-->
+
+</div><!--/ .container-->
+
+<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

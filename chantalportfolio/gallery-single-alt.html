@@ -1,0 +1,232 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>Beautiful <br /> Girl</h1>
+		<a href="masonry.html" class="th-back">Back</a>
+	</div><!--/ .page-header-->	
+	
+	<div class="ten columns">
+
+		<a href="images/full/16.jpg" class="single-image plus-icon animTop" title="">
+			<img alt="" src="images/temp/temp-img-4.jpg">
+		</a>
+
+	</div><!--/ .columns-->
+	
+	<div class="six columns">
+		
+		<p>
+			Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. Donec nunc 
+			consequat ut gravida et, mollis interdum augue. Duis mollis viverra leo rhoncus magna 
+			fringilla eget. Hasellus ut ornare orci. Fusce tempor, neque pretium vulputate vehicula, 
+			ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. Donec fringilla nisi 
+			eget felis.
+		</p>
+
+		<div class="divider-solid"></div>
+		
+		<ul class="gallery-detailed">
+			<li><b>Date:</b>&nbsp;<span>August 2013</span></li>
+			<li><b>Client:</b>&nbsp;<span>Portitor</span></li>
+			<li><b>Skills:</b>&nbsp;<span>Photography</span></li>
+		</ul>
+		
+	</div><!--/ .columns-->
+		
+	<div class="clear"></div>
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Recent Projects</h3>
+	
+	<section class="recent-projects">
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/2.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/1.jpg">
+				</a>
+
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>	
+				
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/15.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/2.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/3.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/3.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>		
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/23.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/4.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/9.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/5.jpg">
+				</a>
+
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>	
+				
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/16.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/6.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/24.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/7.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>		
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+		<article class="four columns">
+
+			<div class="project-thumb">
+
+				<a href="images/full/20.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+					<img alt="" src="images/gallery/8.jpg">
+				</a>
+				
+				<a href="gallery-single.html" class="project-meta">
+					<h5 class="title">Coffe Time</h5>
+					<span class="categories">Video / Logo</span>
+				</a>	
+
+			</div><!--/ .project-thumb-->
+
+		</article><!--/ .columns-->	
+		
+	</section><!--/ .recent-projects-->
+	
+</div><!--/ .container-->
+
+
+<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

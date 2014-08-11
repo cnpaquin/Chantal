@@ -1,0 +1,668 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>awesome <br /> theme elements you like</h1>
+	</div><!--/ .page-header-->		
+		
+	<h3 class="section-title">Toggles</h3>
+	
+	<div class="eight columns">
+		
+		<div class="acc-box">
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Risus mollis malesuada quis quis nulla</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Duis aute irure dolor in reprehenderit laboris nisi ut aliquip </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">commodo incididunt ut labore et dolore magna</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">accusantium doloremque laudantium, totam rem aperiam</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">eaque ipsa quae inventore veritatis</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Duis aute irure dolor in reprehenderit laboris nisi ut aliquip </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+		</div><!--/ .acc-box-->
+		
+	</div><!--/ .columns-->
+		
+	<div class="eight columns">
+		
+		<div class="acc-box type-2">
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Risus mollis malesuada quis quis nulla</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">Duis aute irure dolor in reprehenderit laboris nisi ut aliquip </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">commodo incididunt ut labore et dolore magna</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+			<span data-mode="toggle" class="acc-trigger">
+				<a href="#">accusantium doloremque laudantium, totam rem aperiam, eaque </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+		</div><!--/ .acc-box-->	
+		
+	</div><!--/ .columns-->
+
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Accordion</h3>
+	
+	<div class="sixteen columns">
+		
+		<div class="acc-box">
+
+			<span data-mode="" class="acc-trigger">
+				<a href="#">Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec tristique erosam amet</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="" class="acc-trigger">
+				<a href="#">Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec tristique erosam amet</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="" class="acc-trigger">
+				<a href="#">mattis elit porttitor euismod pharetra sem interdum. Etiam laoreet sagittis placerat </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->	
+
+			<span data-mode="" class="acc-trigger">
+				<a href="#">Ut in magna sit amet massa posuere pretium. Vestibulum id est nulla, non adipiscing Aenean sed dolor quis nulla </a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+			<span data-mode="" class="acc-trigger">
+				<a href="#">sodales bibendum. In vitae justo  ante ipsum primis</a>
+			</span>
+
+			<div class="acc-container">
+
+				<p>
+					Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+					Donec nunc sem, consequat ut gravida et, mollis interdum sit auguemollis viverra leo, 
+					quis rhoncus magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium 
+					vulputate vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. 
+					Donec fringilla nisi eget felis.
+				</p>	
+
+			</div><!--/ .acc-container-->		
+
+		</div><!--/ .acc-box-->		
+		
+	</div><!--/ .columns-->
+	
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Tabs</h3>
+	
+	<div class="sixteen columns">
+		
+		<div class="content-tabs">
+
+			<ul class="tabs-nav clearfix">
+				<li><a href="#tab1">Tab 1</a></li>
+				<li><a href="#tab2">Tab 2</a></li>
+				<li><a href="#tab3">Tab 3</a></li>
+				<li><a href="#tab4">Tab 4</a></li>
+			</ul><!--/ .tabs-nav-->
+
+			<div class="tabs-container">
+
+				<div class="tab-content" id="tab1">
+
+					<p>
+						Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. Donec nunc sem,
+						consequat ut gravida et, mollis interdum sit auguemollis viverra leo, quis rhoncus 
+						magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium vulputate
+						vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. Donec
+						fringilla nisi eget felis sollicitudin pulvinar. Quisque et lorem vel libero elementum 
+						eleifend eget vitae tortor. Sed blandit pellentesque tellus vel dignissim. Nulla odio 
+						ante, rhoncus eu feugiat id, commodo a odio. Donec rhoncus urna nec magna congue molestie. 
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+					</p>
+
+				</div><!--/ .tab-content -->
+
+				<div class="tab-content" id="tab2">
+
+					<p>
+						Etiam malesuada velit bibendum luctus. Donec sit amet orci augue, sed tristique eros. 
+						Nam ut dui sit amet risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in faucibus 
+						orci luctus et ultrices posuere cubilia.						
+						Nam ut dui sit amet risus mollis malesuada quis quis nulla. Donec
+						fringilla nisi eget felis sollicitudin pulvinar. Quisque et lorem vel libero elementum 
+						eleifend eget vitae tortor. Sed blandit pellentesque tellus vel dignissim. Nulla odio 
+						ante, rhoncus eu feugiat id, commodo a odio. Donec rhoncus urna nec magna congue molestie. 
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+						ante, rhoncus eu feugiat id, commodo a odio. Donec rhoncus urna nec magna congue molestie. 
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+					</p>
+
+				</div><!--/ .tab-content -->
+
+				<div class="tab-content" id="tab3">
+
+					<p>
+						Donec fringilla nisi eget felis sollicitudin pulvinar. Quisque et lorem vel libero elementum 
+						eleifend eget vitae tortor. Sed blandit pellentesque tellus vel dignissim. Nulla odio 
+						ante, rhoncus eu feugiat id, commodo a odio. Donec rhoncus urna nec magna congue molestie. 
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+						Etiam malesuada velit bibendum luctus. Donec sit amet orci augue, sed tristique eros. 
+						Nam ut dui sit amet risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in faucibus 
+						orci luctus et ultrices posuere cubilia.	
+					</p>
+
+				</div><!--/ .tab-content -->
+
+				<div class="tab-content" id="tab4">
+
+					<p>
+						Nulla odio ante, rhoncus eu feugiat id, commodo a odio. Donec rhoncus urna nec magna congue molestie. 
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+						Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. Donec nunc sem,
+						consequat ut gravida et, mollis interdum sit auguemollis viverra leo, quis rhoncus 
+						magna fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium vulputate
+						vehicula, ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. Donec
+						fringilla nisi eget felis sollicitudin pulvinar. Quisque et lorem vel libero elementum 
+						eleifend eget vitae tortor. Sed blandit pellentesque tellus vel dignissim.
+					</p>
+
+				</div><!--/ .tab-content -->
+
+			</div><!-- .tabs-container -->	
+
+		</div><!--/ .content tabs -->	
+		
+	</div><!--/ .columns-->
+	
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Blockquote</h3>
+	
+	<div class="sixteen columns">
+
+		<p>
+			Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. Donec nunc sem, 
+			consequat ut gravida et, mollis interdum augue. Duis mollis viverra leo, quis rhoncus magna 
+			fringilla eget. Phasellus ut ornare orci. Fusce tempor, neque pretium vulputate vehicula, 
+			ligula odio convallis mauris, laoreet vehicula dolor odio nec augue. Donec fringilla nisi 
+			eget felis sollicitudin pulvinar. 
+		</p>
+
+		<blockquote>
+			<p>
+				Donec portitor, mi eget interdum posuere, eros dolor placerat neque, eu tincidunt mauris purus 
+				in mauris nullam neque, pretium porttitor vehicula id risus. 
+			</p>
+		</blockquote>
+
+		<p>
+			Quisque et lorem vel libero elementum eleifend eget vitae tortor. Sed blandit pellentesque tellus
+			vel dignissim. Nulla odio ante, rhoncus eu feugiat id, commodo a odio. 
+			Donec rhoncus urna nec magna congue molestie. 
+		</p>
+
+		<blockquote class="type-2">
+			<p>
+				Vestibulum et tortor arcu, sit amet blandit nisi. Morbi iaculis pretium ligula eu pretium. 
+				Duis ornare pellentesque tellus, sit amet porta lorem molestie at.
+			</p>
+		</blockquote>
+
+		<blockquote class="quoteright">
+			<p>
+				Mauris sit amet turpis dignissim posuere id a ante magna sit amet consectetur varius
+			</p>
+		</blockquote>
+
+		<p>
+			Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. Donec nunc sem, consequat ut 
+			gravida et, mollis interdum augue. Duis mollis viverra leo, quis rhoncus magna fringilla eget. 
+			Phasellus ut ornare orci. Fusce tempor, neque pretium vulputate vehicula, 
+			ligula odio convallis mauris.
+		</p>
+
+		<blockquote class="quoteleft">
+			<p> 
+				Mauris sit amet turpis dignissim posuere id a ante magna sit amet consectetur varius
+			</p>
+		</blockquote>
+
+		<p>
+			Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. Donec nunc sem, consequat ut 
+			gravida et, mollis interdum augue. Duis mollis viverra leo, quis rhoncus magna fringilla eget. 
+			Phasellus ut ornare orci. Fusce tempor, neque pretium vulputate vehicula, 
+			ligula odio convallis mauris.
+		</p>
+
+		<div class="divider-solid"></div>
+
+		<h3 class="section-title">Social Icons</h3>
+
+		<ul class="social-icons">
+			<li class="twitter"><a href="#"><span>Twitter</span></a></li>
+			<li class="facebook"><a href="#"><span>Facebook</span></a></li>
+			<li class="dribble"><a href="#"><span>Dribble</span></a></li>
+			<li class="vimeo"><a href="#"><span>Vimeo</span></a></li>
+			<li class="youtube"><a href="#"><span>Youtube</span></a></li>
+			<li class="rss"><a href="#"><span>Rss</span></a></li>
+			<li class="picasa"><a href="#"><span>Picasa</span></a></li>
+			<li class="instagram"><a href="#"><span>Instagram</span></a></li>
+			<li class="skype"><a href="#"><span>Skype</span></a></li>
+			<li class="dropbox"><a href="#"><span>Dropbox</span></a></li>
+			<li class="cat"><a href="#"><span>Cat</span></a></li>
+			<li class="linkedin"><a href="#"><span>LinkedIn</span></a></li>
+			<li class="plus"><a href="#"><span>Plus</span></a></li>
+			<li class="pinterest"><a href="#"><span>Pinterest</span></a></li>
+			<li class="blogger"><a href="#"><span>Blogger</span></a></li>
+			<li class="flickr"><a href="#"><span>Flickr</span></a></li>
+			<li class="delicious"><a href="#"><span>Delicious</span></a></li>
+			<li class="yahoo"><a href="#"><span>Yahoo</span></a></li>
+			<li class="evernote"><a href="#"><span>Evernote</span></a></li>
+			<li class="apple"><a href="#"><span>Apple</span></a></li>
+			<li class="behance"><a href="#"><span>Behance</span></a></li>
+			<li class="gplus"><a href="#"><span>GooglePlus</span></a></li>
+			<li class="digg"><a href="#"><span>Digg</span></a></li>
+			<li class="lastfm"><a href="#"><span>LastFm</span></a></li>
+			<li class="myspace"><a href="#"><span>MySpace</span></a></li>
+			<li class="social"><a href="#"><span>Social</span></a></li>
+			<li class="wordpress"><a href="#"><span>Wordpress</span></a></li>
+			<li class="mail"><a href="#"><span>Mail</span></a></li>
+		</ul><!--/ .social-icons-->	
+		
+	</div><!--/ .columns-->
+	
+	<div class="divider-solid"></div>
+
+	<h3 class="section-title">Lists Styles</h3>
+	
+	<div class="eight columns">
+		
+		<ul class="list">
+			<li><i class="icon-ok"></i>Lorem ipsum dolor amet, consectetur </li>
+			<li><i class="icon-ok-circle"></i>Maecenas ac metus augue tincidunt </li>
+			<li><i class="icon-ok-sign"></i>Duis vitae est mi, et cursus nunc. </li>
+			<li><i class="icon-pencil"></i>Duis vitae est mi, et cursus nunc. </li>
+			<li><i class="icon-plus"></i>Venenatis pretium. In in diam eros.</li>
+			<li><i class="icon-plus-sign"></i>Nam volutpat justo ut metus semper quis </li>
+			<li><i class="icon-upload"></i>Quisque egestas lacinia leo vitae </li>
+			<li><i class="icon-upload-alt"></i>Fusce ut erat quam, vitae porttitor urna. </li>
+			<li><i class="icon-asterisk"></i>Curabitur tempor quam nec elit semper </li>
+			<li><i class="icon-cogs"></i>Varius rutrum aliquam. </li>
+			<li><i class="icon-comments"></i>Duis vitae est mi, et cursus nunc.</li>
+		</ul>
+		
+	</div><!--/ .columns-->
+	
+	<div class="eight columns">
+		
+		<ul class="list ordered">
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Vivamus pharetra massa quis mauris dignissim lobortis.</li>
+			<li>Maecenas mattis ornare orci id pulvinar.</li>
+			<li>Praesent placerat sem quis est ultrices porta lectus elementum</li>
+			<li>Faucibus sit amet justo. Integer commodo bibendum erat </li>
+			<li>Suspendisse suscipit tincidunt accumsan. Nam vitae porttitor purus.</li>
+			<li>Maecenas ultricies arcu auctor odio vulputate porta. </li>
+			<li>Sed tristique mollis lacus.</li>
+			<li>Viverra accumsan arcu ullamcorper nec vitae auctor nisl.</li>
+			<li>Curabitur magna risus, dapibus non convallis ut, tempor in eros.</li>
+			<li>Nullam congue, nibh sed dictum luctus, sapien felis.</li>
+			<li>Semper lorem, nec mattis diam nulla ut augue aenean nec ligula est.</li>
+			<li>Donec vitae est sem, nec vehicula enim.</li>
+		</ul>
+		
+	</div><!--/ .columns-->
+	
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Drop Caps</h3>
+	
+	<div class="eight columns">
+		
+		<p>
+			<span class="dropcap circle">A</span>
+			liquam hendrerit rutrum iaculis. Aliquam vitae odio elit. Nullam ondimentum etiam maluada
+			velit beum donec sit amet augue tristique. erosam amet risus. Mollis malesuada nulla vestibulum
+			ante ipsum. Primis in faucibus orci luctus ultrices posuere cubilia Dipiscing donec ipsum, 
+			loboris convallis laoret enim. Aliquam hendrerit rutrum iaculis. Aliquam vitae odio elit. 
+			Nullam ondimentum etiam maluada velit beum donec sit amet augue tristique. erosam amet risus. 
+			Mollis malesuada quis nulla. Vestibulum ante ipsum. Primis in faucibus orci luctus ultrices posuere
+			cubilia mattis nisi vel portitor euismod pharetra sem interdum.
+		</p>
+		
+	</div><!--/ .columns-->
+	
+	<div class="eight columns">
+		
+		<p>
+			<span class="dropcap gray">S</span>
+			liquam hendrerit rutrum iaculis. Aliquam vitae odio elit. Nullam ondimentum etiam maluada
+			velit beum donec sit amet augue tristique. erosam amet risus. Mollis malesuada nulla vestibulum
+			ante ipsum. Primis in faucibus orci luctus ultrices posuere cubilia Dipiscing donec ipsum, 
+			loboris convallis laoret enim. Aliquam hendrerit rutrum iaculis. Aliquam vitae odio elit. 
+			Nullam ondimentum etiam maluada velit beum donec sit amet augue tristique. erosam amet risus. 
+			Mollis malesuada quis nulla. Vestibulum ante ipsum. Primis in faucibus orci luctus ultrices posuere
+			cubilia mattis nisi vel portitor euismod pharetra sem interdum.
+		</p>	
+		
+	</div><!--/ .columns-->
+	
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Alert Boxes</h3>
+	
+	<div class="four columns">
+		<p class="error">Alert Text</p>
+	</div><!--/ .columns-->
+	
+	<div class="four columns">
+		<p class="success">Alert Text</p>
+	</div><!--/ .columns-->
+	
+	<div class="four columns">
+		<p class="info">Alert Text</p>
+	</div><!--/ .columns-->
+	
+	<div class="four columns">
+		<p class="notice">Alert Text</p>
+	</div><!--/ .columns-->
+	
+	<div class="divider-solid"></div>
+	
+	<h3 class="section-title">Buttons</h3>
+	
+	<div class="one-third column">
+
+		<a class="button small default" href="#">Button</a>
+		<a class="button small cyan" href="#">Button</a>
+		<a class="button small turquoise" href="#">Button</a>
+		<a class="button small green" href="#">Button</a>
+		<a class="button small blue" href="#">Button</a>
+		<a class="button small violet" href="#">Button</a>
+		<a class="button small orange" href="#">Button</a>
+		<a class="button small yellow" href="#">Button</a>
+		<a class="button small pink" href="#">Button</a>
+		<a class="button small coral" href="#">Button</a>
+		<a class="button small brown" href="#">Button</a>
+		<a class="button small lightgrey" href="#">Button</a>
+
+	</div><!--/ .column -->  
+
+	<div class="one-third column">
+
+		<a class="button medium default" href="#">Button</a>
+		<a class="button medium cyan" href="#">Button</a>
+		<a class="button medium turquoise" href="#">Button</a>
+		<a class="button medium green" href="#">Button</a>
+		<a class="button medium blue" href="#">Button</a>
+		<a class="button medium violet" href="#">Button</a>
+		<a class="button medium orange" href="#">Button</a>
+		<a class="button medium yellow" href="#">Button</a>
+		<a class="button medium pink" href="#">Button</a>
+		<a class="button medium coral" href="#">Button</a>
+		<a class="button medium brown" href="#">Button</a>
+		<a class="button medium lightgrey" href="#">Button</a>
+
+	</div><!--/ .column-->  
+
+	<div class="one-third column">
+
+		<a class="button large default" href="#">Button</a>
+		<a class="button large cyan" href="#">Button</a>
+		<a class="button large turquoise" href="#">Button</a>
+		<a class="button large green" href="#">Button</a>
+		<a class="button large blue" href="#">Button</a>
+		<a class="button large violet" href="#">Button</a>
+		<a class="button large orange" href="#">Button</a>
+		<a class="button large yellow" href="#">Button</a>
+		<a class="button large pink" href="#">Button</a>
+		<a class="button large coral" href="#">Button</a>
+		<a class="button large brown" href="#">Button</a>
+		<a class="button large lightgrey" href="#">Button</a>
+
+	</div><!--/ .column -->
+	
+</div><!--/ .container-->
+
+
+	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

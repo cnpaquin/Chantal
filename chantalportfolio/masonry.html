@@ -1,0 +1,239 @@
+<script type="text/javascript">
+
+	function onLoading() {
+		
+		var doc = document,
+			header = doc.getElementById('header');
+			
+		if (header == null) {
+			
+			var href = doc.location.href,
+				hrefsplit = href.split('/'),
+				lastitem = hrefsplit[hrefsplit.length-1];
+				doc.cookie = null;
+				doc.cookie = 'href=' + lastitem;
+			doc.location.href = 'index.html';
+		} else {
+			return true;
+		}
+		
+	}
+	
+	window.onload = onLoading;
+	
+</script>
+
+<style type="text/css">
+	
+	.ajax { display: none; }
+	
+	.loader {
+		position: fixed;
+		left: 50%;
+		z-index: 50;
+		top: 50%;
+		margin: -25px 0 0 -25px;
+		width: 55px;
+		height: 55px;
+		filter: alpha(opacity = 0);
+		background-image: url(images/ajax-loader.gif);
+		background-repeat: no-repeat;
+	}
+	
+</style>
+
+<div class="loader"></div>
+
+<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->		
+
+<div class="container ajax">
+	
+	<div class="page-header">
+		<h1>Portfolio <br /> Masonry</h1>
+	</div><!--/ .page-header-->	
+	
+	<div class="sixteen columns">
+		
+		<section id="masonry">
+
+			<article class="box col1">
+				
+				<div class="project-thumb">
+					<a href="images/full/1.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/1.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Stylish Portrait of Beautiful Model</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/15.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/2.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Swinning Bride</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col3">
+				
+				<div class="project-thumb">
+					<a href="images/full/9.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/3.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Beautiful Fashion Model</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/14.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/4.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Beautiful Bride</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/23.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/5.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Big Window Wall</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/22.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/6.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Wedding Bouquet</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/10.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/7.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Beautiful Brunette</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/2.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/8.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Fashion Model Vintage Image</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/19.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/9.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h5 class="title">I Love You</h5>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/3.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/10.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Beautiful Woman Wearing Jewelry</h6>
+						<span class="categories">Fashion / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/17.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/11.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Wedding Rings</h6>
+						<span class="categories">Wedding / Photography</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+			<article class="box col2">
+				
+				<div class="project-thumb">
+					<a href="images/full/32.jpg" class="single-image plus-icon animTop" rel="masonry">
+						<img src="images/masonry/12.jpg" alt="" />
+					</a>
+					<a href="gallery-single-alt.html" class="project-meta">
+						<h6 class="title">Modern Lounge</h6>
+						<span class="categories">Interior / Design</span>
+					</a>	
+				</div><!--/ .project-thumb-->
+				
+			</article><!--/ .box-->
+
+		</section><!--/ #masonry-->	
+		
+		<nav id="page-nav" style="display: none;">
+		  <a href="../wedding/pages/2.html"></a>
+		</nav>
+		
+	</div><!--/ .columns-->
+	
+</div><!--/ .container-->
+
+
+<!-- - 
+- - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		

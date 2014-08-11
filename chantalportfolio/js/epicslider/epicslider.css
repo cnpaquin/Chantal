@@ -1,0 +1,193 @@
+	/*
+	Skin Name: base
+	Description: base skin for the Epic Slider.
+	Version: 1.0
+	Author: unlimitDesign
+	*/
+
+
+	/*Wrapper
+	-------------------*/
+	
+	.epic-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		
+	}
+	
+	.epicSlider.slider-wrapper {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	
+	.epicSlider p:last-child { margin-bottom:0; }
+
+	/* Slides
+	-------------------*/
+	
+		.epicSlider #slides img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: none;
+			max-width: none;
+		}
+
+	/* Navigation
+	-------------------*/
+	
+	.epicSlider #epic-navigation { 
+		position: absolute;
+		z-index: 5;
+		bottom: -50px;
+		right: 50px;
+		width: 110px;
+		height: 40px;
+		
+		-webkit-transition: bottom .35s linear;
+				transition: bottom .35s linear;
+	}
+	
+	.touch .epicSlider #epic-navigation,
+	.no-touch .epicSlider:hover #epic-navigation { bottom: 150px;}
+	
+		.epicSlider #epic-navigation .nav-button div {
+			float: left;
+			margin-right: 5px;
+			width: 40px;
+			height: 40px;
+			border-width: 4px;
+			border-color: #fff;
+			border-style: solid;
+			background-color: #fff;
+			background-color: rgba(255,255,255,.9);
+			cursor: pointer;
+			
+			-webkit-border-radius: 50%;
+					border-radius: 50%;
+			-webkit-transition: background-color .25s linear;
+					transition: background-color .25s linear;
+		}
+		
+		.epicSlider #epic-navigation .nav-button div:before {
+			position: absolute;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 16px;
+			color: #92999E;
+			font-family: 'FontAwesome';
+			
+			-webkit-transition: color .25s linear;
+					transition: color .25s linear;
+		}
+		
+		.epicSlider #epic-navigation .nav-button #prev:before { content: '\f053'; }
+		.epicSlider #epic-navigation .nav-button #next:before { content: '\f054'; }
+		
+		.epicSlider #epic-navigation .nav-button #prev:hover,
+		.epicSlider #epic-navigation .nav-button #next:hover {
+			background-color: #000;
+			background-color: rgba(0,0,0,.6);
+		}
+		
+		.epicSlider #epic-navigation .nav-button #prev:hover:before,
+		.epicSlider #epic-navigation .nav-button #next:hover:before { color: #fff; }
+		
+	/* Caption Positions
+	-------------------*/
+	
+	.epic-caption {
+		z-index: 3;
+		display: none;
+		position: absolute;
+		font-family: Open Sans;
+	}
+	
+	/* Captions Styling
+	-------------------*/
+	
+	/* 1. */
+	
+	.epic-caption-boxed.left-position {
+		bottom: 175px;
+		left: 10%;
+		right: auto;	
+	}
+	
+	.epic-caption-boxed {
+		padding: 20px 25px;
+		border: 1px solid #ecebea;
+		background-color: #000;
+		background-color: rgba(0,0,0,0.5);
+	}
+	
+		.epic-caption-boxed h2 {
+			margin: 0;
+			font-family: 'Oswald', Helvetica, sans-serif;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		
+	/* 2. */
+	
+	.epic-caption-bordered {
+		bottom: 175px;
+		left: 0;
+		right: auto;
+		width: 100%;
+		text-align: center;
+	}
+	
+		.epic-caption-bordered h1 {
+			display: inline-block;
+			margin: 0;
+			padding: 20px 0;
+			border-top-width: 1px;
+			border-top-style: solid;
+			border-top-color: #fff;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #fff;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 60px;
+			font-family: 'Oswald', Helvetica, sans-serif;
+			line-height: 1;
+		}	
+		
+	/* 3. */	
+	
+	.epic-caption-boxed.right-position {
+		bottom: 200px;
+		right: 10%;
+		left: auto;	
+	}
+		
+	/* 4. */	
+	
+	.epic-caption-white {
+		bottom: 35%;
+		right: 5%;
+		left: auto;	
+		text-align: right;
+	}
+	
+		.epic-caption-white h2 {
+			display: inline-block;
+			margin-bottom: 2px;
+			padding: 15px 20px;
+			background-color: #fdfcfc;
+			color: #1d151c;
+			text-transform: uppercase;
+		}
