@@ -1,153 +1,179 @@
-<script type="text/javascript">
-
-	function onLoading() {
-		
-		var doc = document,
-			header = doc.getElementById('header');
-			
-		if (header == null) {
-			
-			var href = doc.location.href,
-				hrefsplit = href.split('/'),
-				lastitem = hrefsplit[hrefsplit.length-1];
-				doc.cookie = null;
-				doc.cookie = 'href=' + lastitem;
-			doc.location.href = 'index.html';
-		} else {
-			return true;
-		}
-		
-	}
+<!DOCTYPE html>
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<head>
+	<!-- Google Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Allura|Oswald:400,700,300' rel='stylesheet' type='text/css'>
 	
-	window.onload = onLoading;
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
 	
-</script>
-
-<style type="text/css">
+	<title>Almera | Blog Single</title>
 	
-	.ajax { display: none; }
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut" href="images/favicon.ico" />
 	
-	.loader {
-		position: fixed;
-		left: 50%;
-		z-index: 50;
-		top: 50%;
-		margin: -25px 0 0 -25px;
-		width: 55px;
-		height: 55px;
-		filter: alpha(opacity = 0);
-		background-image: url(images/ajax-loader.gif);
-		background-repeat: no-repeat;
-	}
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-</style>
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" />
 
-<div class="loader"></div>
+	<!-- HTML5 Shiv
+	================================================== -->
+	<script src="js/jquery.modernizr.js"></script>
+	
+</head>
+<body>
+	
+<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->	
 
-<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->		
+<header id="header">
 
-<div class="container ajax">
+	<div class="container">
 
-	<div class="page-header">
-		<h1>Latest news single</h1>
-	</div><!--/ .page-header-->
+		<div class="sixteen columns">
 
-	<section id="main" class="twelve columns">
+			<div id="logo">
+				<h1><a href="index.html">Almera</a></h1>
+			</div><!--/ #logo-->
 
-		<article class="entry clearfix">
+			<nav id="navigation" class="navigation">
 
-			<div class="ten columns">
+				<div class="menu">
 
-				<a class="single-image plus-icon" href="images/blog/blog-img-1.jpg">
-					<img alt="" src="images/blog/blog-img-1.jpg">
-					<span class="curtain"></span>
-				</a>
+					<ul>
+						<li><a href="index.html">Home</a>
+							<ul>
+								<li><a href="index.html">Home Grid 1</a></li>
+								<li><a href="index4.html">Home Grid 2</a></li>
+								<li><a href="index5.html">Fullscreen</a></li>
+								<li><a href="masonry.html">Masonry</a></li>
+							</ul>
+						</li>
+						<li><a href="image-gallery.html">Gallery</a>
+							<ul>
+								<li><a href="image-gallery.html">Image Gallery</a></li>
+								<li><a href="thumbnails.html">Thumbnails</a></li>
+								<li><a href="gallery-3-columns.html">3 Columns</a></li>
+								<li><a href="gallery-4-columns.html">4 Columns</a></li>
+							</ul>
+						</li>
+						<li><a href="albums.html">Albums</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="elements.html">Features</a>
+							<ul>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="columns.html">Columns</a></li>
+								<li><a href="typography.html">Typography</a></li>
+							</ul>
+						</li>
+						<li class="current-menu-item"><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
 
-				<div class="entry-date">
-					<a href="#">
-						<span class="entry-day">15</span>
-						<span class="entry-month">apr</span>
-					</a>
-					<span class="entry-year">2013</span>
-				</div><!--/ .entry-date-->
+				</div><!--/ .menu-->
 
-				<div class="entry-meta">
-					<h3 class="title"><a href="#">Single Clean Post</a></h3>
+			</nav><!--/ #navigation-->	
 
-					<span class="author"><a href="#">By Admin</a></span>
-					<span class="categories"><a href="#">Photography</a></span>
-					<span class="comments"><a href="#">4 Comments</a></span>
-				</div><!--/ .entry-meta-->	
+		</div><!--/ .columns-->
 
-				<div class="entry-body">		
-					
-					<p>
-						Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
-						Donec nunc sem, consequat ut gravida et, mollis interdum augue. Duis 
-						mollis viverra leo, quis rhoncus magna fringilla eget. Phasellus ut 
-						ornare orci. Fusce tempor, neque pretium vulputate vehicula, ligula 
-						odio convallis mauris, laoreet vehicula dolor odio nec augue. Donec 
-						fringilla nisi eget felis sollicitudin pulvinar. Quisque et lorem vel 
-						libero elementum eleifend eget vitae tortor. Sed blandit pellentesque 
-						tellus vel dignissim. Nulla odio ante, rhoncus eu feugiat id, commodo 
-						a odio. Donec rhoncus urna nec magna congue molestie. 
-					</p>
+	</div><!--/ .container-->
 
-					<blockquote>
-						<p>
-							Donec portitor, mi eget interdum posuere, eros dolor placerat neque, eu tincidunt 
-							mauris purus in mauris nullam neque, pretium porttitor vehicula id risus. 
-						</p>
-					</blockquote>
+</header><!--/ #header-->
 
-					<p>
-						Quisque et lorem vel libero elementum eleifend eget vitae tortor. Sed blandit 
-						pellentesque tellus vel dignissim. Nulla odio ante, rhoncus eu feugiat id, 
-						commodo a odio. 
-					</p>
+<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->	
 
-				</div><!--/ .entry-body-->
 
-			</div><!--/ .columns-->
+<!-- - - - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->	
 
-		</article><!--/ .entry-->	
+<div id="wrapper" class="sbr">
+	
+	<div id="content">
 
-		<section id="comments">
+		<div class="container">
 
-			<h6>3 Comments</h6>
+			<div class="page-header">
+				<h1>Latest news single</h1>
+			</div><!--/ .page-header-->
 
-			<ol class="comments-list">
+			<section id="main" class="twelve columns">
 
-				<li class="comment">
+				<article class="entry clearfix">
 
-					<article>
+					<div class="ten columns">
 
-						<div class="gravatar">
-							<img src="images/gravatar.jpg" alt="">
-						</div>
+						<a class="single-image plus-icon" href="images/blog/blog-img-1.jpg">
+							<img alt="" src="images/blog/blog-img-1.jpg">
+							<span class="curtain"></span>
+						</a>
 
-						<div class="comment-body">
+						<div class="entry-date">
+							<a href="#">
+								<span class="entry-day">15</span>
+								<span class="entry-month">apr</span>
+							</a>
+							<span class="entry-year">2013</span>
+						</div><!--/ .entry-date-->
 
-							<div class="comment-meta">
+						<div class="entry-meta">
+							<h3 class="title"><a href="#">Single Clean Post</a></h3>
 
-								<div class="comment-author"><a href="#">Alex</a></div>
-								<div class="comment-date"><a href="#">April 22, 2013</a>&nbsp; - &nbsp;</div>
+							<span class="author"><a href="#">By Admin</a></span>
+							<span class="categories"><a href="#">Photography</a></span>
+							<span class="comments"><a href="#">4 Comments</a></span>
+						</div><!--/ .entry-meta-->	
 
-								<a class="comment-reply-link" href="#">Reply</a>
-
-							</div><!--/ .comment-meta-->
+						<div class="entry-body">		
 
 							<p>
-								Nunc malesuada semper hendrerit. Aenean sem dui, vehicula nealiquet 
-								aliquet, eleifend molestie felis. Integer ut ipsum enim. Suspendisse 
-								at viverra velit. Sed sodales cursus nisl, non cursus massa aliquet vel. 
+								Nulla bibendum diam nec tortor ullamcorper sed dapibus sem posuere. 
+								Donec nunc sem, consequat ut gravida et, mollis interdum augue. Duis 
+								mollis viverra leo, quis rhoncus magna fringilla eget. Phasellus ut 
+								ornare orci. Fusce tempor, neque pretium vulputate vehicula, ligula 
+								odio convallis mauris, laoreet vehicula dolor odio nec augue. Donec 
+								fringilla nisi eget felis sollicitudin pulvinar. Quisque et lorem vel 
+								libero elementum eleifend eget vitae tortor. Sed blandit pellentesque 
+								tellus vel dignissim. Nulla odio ante, rhoncus eu feugiat id, commodo 
+								a odio. Donec rhoncus urna nec magna congue molestie. 
 							</p>
 
-						</div><!--/ .comment-body-->
+							<blockquote>
+								<p>
+									Donec portitor, mi eget interdum posuere, eros dolor placerat neque, eu tincidunt 
+									mauris purus in mauris nullam neque, pretium porttitor vehicula id risus. 
+								</p>
+							</blockquote>
 
-					</article>
+							<p>
+								Quisque et lorem vel libero elementum eleifend eget vitae tortor. Sed blandit 
+								pellentesque tellus vel dignissim. Nulla odio ante, rhoncus eu feugiat id, 
+								commodo a odio. 
+							</p>
 
-					<ul class="children">
+						</div><!--/ .entry-body-->
+
+					</div><!--/ .columns-->
+
+				</article><!--/ .entry-->	
+
+				<section id="comments">
+
+					<h6>3 Comments</h6>
+
+					<ol class="comments-list">
 
 						<li class="comment">
 
@@ -161,8 +187,74 @@
 
 									<div class="comment-meta">
 
-										<div class="comment-author"><a href="#">Julia</a></div>
+										<div class="comment-author"><a href="#">Alex</a></div>
 										<div class="comment-date"><a href="#">April 22, 2013</a>&nbsp; - &nbsp;</div>
+
+										<a class="comment-reply-link" href="#">Reply</a>
+
+									</div><!--/ .comment-meta-->
+
+									<p>
+										Nunc malesuada semper hendrerit. Aenean sem dui, vehicula nealiquet 
+										aliquet, eleifend molestie felis. Integer ut ipsum enim. Suspendisse 
+										at viverra velit. Sed sodales cursus nisl, non cursus massa aliquet vel. 
+									</p>
+
+								</div><!--/ .comment-body-->
+
+							</article>
+
+							<ul class="children">
+
+								<li class="comment">
+
+									<article>
+
+										<div class="gravatar">
+											<img src="images/gravatar.jpg" alt="">
+										</div>
+
+										<div class="comment-body">
+
+											<div class="comment-meta">
+
+												<div class="comment-author"><a href="#">Julia</a></div>
+												<div class="comment-date"><a href="#">April 22, 2013</a>&nbsp; - &nbsp;</div>
+
+												<a class="comment-reply-link" href="#">Reply</a>
+
+											</div><!--/ .comment-meta-->
+
+											<p>
+												Nunc malesuada semper hendrerit. Aenean sem dui, vehicula nealiquet 
+												aliquet, eleifend molestie felis. Integer ut ipsum enim. Suspendisse 
+												at viverra velit. Sed sodales cursus nisl, non cursus massa aliquet vel. 
+											</p>
+
+										</div><!--/ .comment-body-->
+
+									</article>
+
+								</li><!--/ .comment-->
+
+							</ul><!--/ .children-->
+
+						</li><!--/ .comment-->
+
+						<li class="comment">
+
+							<article>
+
+								<div class="gravatar">
+									<img src="images/gravatar.jpg" alt="">
+								</div>
+
+								<div class="comment-body">
+
+									<div class="comment-meta">
+
+										<div class="comment-author"><a href="#">John</a></div>
+										<div class="comment-date"><a href="#">April 22, 2012</a>&nbsp; - &nbsp;</div>
 
 										<a class="comment-reply-link" href="#">Reply</a>
 
@@ -180,254 +272,273 @@
 
 						</li><!--/ .comment-->
 
-					</ul><!--/ .children-->
+					</ol><!--/ .comments-list-->
 
-				</li><!--/ .comment-->
+				</section><!--/ #comments-->
 
-				<li class="comment">
+				<section id="respond">
 
-					<article>
+					<h6>Leave a Comment</h6>
 
-						<div class="gravatar">
-							<img src="images/gravatar.jpg" alt="">
-						</div>
+					<form method="post" action="/" class="comments-form">
 
-						<div class="comment-body">
+						<p class="comment-form-author">
+							<input type="text" placeholder="Your Name *" required="" name="author" />
+						</p>
 
-							<div class="comment-meta">
+						<p class="comment-form-email">
+							<input type="email" placeholder="E-mail *" required="" name="email" />
+						</p>
 
-								<div class="comment-author"><a href="#">John</a></div>
-								<div class="comment-date"><a href="#">April 22, 2012</a>&nbsp; - &nbsp;</div>
+						<p class="comment-form-url">
+							<input type="url" placeholder="Website" name="url" />
+						</p>
 
-								<a class="comment-reply-link" href="#">Reply</a>
+						<p class="comment-form-comment">
+							<textarea placeholder="Message *" required="" name="comment"></textarea>	
+						</p>
 
-							</div><!--/ .comment-meta-->
+						<p class="form-submit">
+							<input type="submit" value="Submit" id="submit" name="submit">
+						</p>
 
-							<p>
-								Nunc malesuada semper hendrerit. Aenean sem dui, vehicula nealiquet 
-								aliquet, eleifend molestie felis. Integer ut ipsum enim. Suspendisse 
-								at viverra velit. Sed sodales cursus nisl, non cursus massa aliquet vel. 
-							</p>
+					</form><!--/ .comments-form-->
 
-						</div><!--/ .comment-body-->
+				</section><!--/ #respond-->
 
-					</article>
+			</section><!--/ #main-->
 
-				</li><!--/ .comment-->
+			<aside id="sidebar" class="four columns">
 
-			</ol><!--/ .comments-list-->
+				<div class="widget widget_text">
 
-		</section><!--/ #comments-->
+					<h3 class="widget-title">About Our Wedding</h3>
 
-		<section id="respond">
+					<div class="textwidget">
 
-			<h6>Leave a Comment</h6>
+						<p>
+							Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in 
+							faucibus orci luctus et ultrices posuere cubilia mattis vel elit porttitor
+							euismod pharetra sem interdum. 
+						</p>
 
-			<script type="text/javascript">
-				jQuery(function () {
-					jQuery('.comments-form').on('submit', function (e) { e.preventDefault(); })	
-				});
-			</script>
-			
-			<form method="post" action="/" class="comments-form">
+					</div><!--/ .textwidget-->
 
-				<p class="comment-form-author">
-					<input type="text" placeholder="Your Name *" required="" name="author" />
-				</p>
+				</div><!--/ .widget-->
 
-				<p class="comment-form-email">
-					<input type="email" placeholder="E-mail *" required="" name="email" />
-				</p>
+				<div class="widget widget_search">
 
-				<p class="comment-form-url">
-					<input type="url" placeholder="Website" name="url" />
-				</p>
+					<form action="#" method="post">
 
-				<p class="comment-form-comment">
-					<textarea placeholder="Message *" required="" name="comment"></textarea>	
-				</p>
+						<p>
+							<input type="search" id="s">
+							<button class="submit-search" type="submit">Search</button>
+						</p>
 
-				<p class="form-submit">
-					<input type="submit" value="Submit" id="submit" name="submit">
-				</p>
+					</form>
 
-			</form><!--/ .comments-form-->
+				</div><!--/ .widget-->
 
-		</section><!--/ #respond-->
+				<div class="widget widget_categories">
 
-	</section><!--/ #main-->
+					<h3 class="widget-title">Categories</h3>
 
-	<aside id="sidebar" class="four columns">
+					<ul>
+						<li><a href="blog.html">Wedding Ceremony</a></li>
+						<li><a href="blog.html">Responsive Design</a></li>
+						<li><a href="blog.html">Video</a></li>
+					</ul>
 
-		<div class="widget widget_text">
+				</div><!--/ .widget-->
 
-			<h3 class="widget-title">About Our Wedding</h3>
+				<div class="widget widget_popular_posts">
 
-			<div class="textwidget">
+					<h3 class="widget-title">Popular Posts</h3>
 
-				<p>
-					Risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in 
-					faucibus orci luctus et ultrices posuere cubilia mattis vel elit porttitor
-					euismod pharetra sem interdum. 
-				</p>
+					<ul>					
+						<li> 
+							<div class="image-holder">
+								<a href="blog-single.html"><img src="images/temp/popular-1.jpg" alt="" ></a>
+							</div>
+							<div class="post-holder">
+								<h6><a href="blog-single.html">Risus Mollis Nalesuada Vestibulum</a></h6>
+								<span>April 15, 2012</span>
+							</div>
+						</li>
+						<li> 
+							<div class="image-holder">
+								<a href="blog-single.html"><img src="images/temp/popular-2.jpg" alt="" ></a>
+							</div>
+							<div class="post-holder">
+								<h6><a href="blog-single.html">Primis in Faucibus Luctus</a></h6>
+								<span>April 15, 2013</span>
+							</div>	
+						</li>
+						<li> 
+							<div class="image-holder">
+								<a href="blog-single.html"><img src="images/temp/popular-3.jpg" alt="" ></a>
+							</div>
+							<div class="post-holder">
+								<h6><a href="blog-single.html">Euismod pharetra sem interdum</a></h6>
+								<span>March 22, 2013</span>
+							</div>	
+						</li>
+					</ul>
 
-			</div><!--/ .textwidget-->
+				</div><!--/ .widget-->
 
-		</div><!--/ .widget-->
+				<div class="widget widget_calendar">
 
-		<div class="widget widget_search">
+					<div id="calendar_wrap">
 
-			<form action="#" method="post">
+						<table id="wp-calendar">
 
-				<p>
-					<input type="search" id="s">
-					<button class="submit-search" type="submit">Search</button>
-				</p>
+							<caption>April 2013</caption>
 
-			</form>
+							<thead>
+								<tr>
+									<th title="Sunday" scope="col">S</th>
+									<th title="Monday" scope="col">M</th>
+									<th title="Tuesday" scope="col">T</th>
+									<th title="Wednesday" scope="col">W</th>
+									<th title="Thursday" scope="col">T</th>
+									<th title="Friday" scope="col">F</th>
+									<th title="Saturday" scope="col">S</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td id="prev" colspan="3">
+										<a title="" href="#">« Jul</a>
+									</td>
+									<td class="pad">&nbsp;</td>
+									<td id="next" colspan="3">
+										<a title="" href="#">Feb »</a>
+									</td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td class="pad" colspan="2">&nbsp;</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+									<td>10</td>
+									<td>11</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>14</td>
+									<td>15</td>
+									<td>16</td>
+									<td id="today">17</td>
+									<td>18</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>21</td>
+									<td>22</td>
+									<td>23</td>
+									<td>24</td>
+									<td>25</td>
+									<td>26</td>
+								</tr>
+								<tr>
+									<td>27</td>
+									<td>28</td>
+									<td>29</td>
+									<td>30</td>
+									<td>31</td>
+									<td colspan="2" class="pad">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
 
-		</div><!--/ .widget-->
-
-		<div class="widget widget_categories">
-
-			<h3 class="widget-title">Categories</h3>
-
-			<ul>
-				<li><a href="blog.html">Wedding Ceremony</a></li>
-				<li><a href="blog.html">Responsive Design</a></li>
-				<li><a href="blog.html">Video</a></li>
-			</ul>
-
-		</div><!--/ .widget-->
-
-		<div class="widget widget_popular_posts">
-
-			<h3 class="widget-title">Popular Posts</h3>
-
-			<ul>					
-				<li> 
-					<div class="image-holder">
-						<a href="blog-single.html"><img src="images/temp/popular-1.jpg" alt="" ></a>
 					</div>
-					<div class="post-holder">
-						<h6><a href="blog-single.html">Risus Mollis Nalesuada Vestibulum</a></h6>
-						<span>April 15, 2012</span>
-					</div>
-				</li>
-				<li> 
-					<div class="image-holder">
-						<a href="blog-single.html"><img src="images/temp/popular-2.jpg" alt="" ></a>
-					</div>
-					<div class="post-holder">
-						<h6><a href="blog-single.html">Primis in Faucibus Luctus</a></h6>
-						<span>April 15, 2013</span>
-					</div>	
-				</li>
-				<li> 
-					<div class="image-holder">
-						<a href="blog-single.html"><img src="images/temp/popular-3.jpg" alt="" ></a>
-					</div>
-					<div class="post-holder">
-						<h6><a href="blog-single.html">Euismod pharetra sem interdum</a></h6>
-						<span>March 22, 2013</span>
-					</div>	
-				</li>
-			</ul>
 
-		</div><!--/ .widget-->
+				</div><!--/ .widget-->
 
-		<div class="widget widget_calendar">
+				<div class="widget ThemeMakers_Flickr_Widget">
 
-			<div id="calendar_wrap">
+					<h3 class="widget-title">Photostream</h3>
 
-				<table id="wp-calendar">
+					<ul class="flickr-badge clearfix"></ul>
 
-					<caption>April 2013</caption>
+				</div><!--/ .widget-->
 
-					<thead>
-						<tr>
-							<th title="Sunday" scope="col">S</th>
-							<th title="Monday" scope="col">M</th>
-							<th title="Tuesday" scope="col">T</th>
-							<th title="Wednesday" scope="col">W</th>
-							<th title="Thursday" scope="col">T</th>
-							<th title="Friday" scope="col">F</th>
-							<th title="Saturday" scope="col">S</th>
-						</tr>
-					</thead>
-					<tfoot>
-						<tr>
-							<td id="prev" colspan="3">
-								<a title="" href="#">« Jul</a>
-							</td>
-							<td class="pad">&nbsp;</td>
-							<td id="next" colspan="3">
-								<a title="" href="#">Feb »</a>
-							</td>
-						</tr>
-					</tfoot>
-					<tbody>
-						<tr>
-							<td class="pad" colspan="2">&nbsp;</td>
-							<td>1</td>
-							<td>2</td>
-							<td>3</td>
-							<td>4</td>
-							<td>5</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>7</td>
-							<td>8</td>
-							<td>9</td>
-							<td>10</td>
-							<td>11</td>
-							<td>12</td>
-						</tr>
-						<tr>
-							<td>13</td>
-							<td>14</td>
-							<td>15</td>
-							<td>16</td>
-							<td id="today">17</td>
-							<td>18</td>
-							<td>19</td>
-						</tr>
-						<tr>
-							<td>20</td>
-							<td>21</td>
-							<td>22</td>
-							<td>23</td>
-							<td>24</td>
-							<td>25</td>
-							<td>26</td>
-						</tr>
-						<tr>
-							<td>27</td>
-							<td>28</td>
-							<td>29</td>
-							<td>30</td>
-							<td>31</td>
-							<td colspan="2" class="pad">&nbsp;</td>
-						</tr>
-					</tbody>
-				</table>
+			</aside><!--/ #sidebar-->
 
-			</div>
+		</div><!--/ .container-->
 
-		</div><!--/ .widget-->
+	</div><!--/ #content-->
+	
+</div><!--/ #wrapper-->
 
-		<div class="widget ThemeMakers_Flickr_Widget">
-
-			<h3 class="widget-title">Photostream</h3>
-
-			<ul class="flickr-badge clearfix"></ul>
-
-		</div><!--/ .widget-->
-
-	</aside><!--/ #sidebar-->
-
-</div><!--/ .container-->
+<!-- - - - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->	
 
 
-	<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		
+<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->	
+
+<footer id="footer">
+
+	<div class="container">
+
+		<div class="sixteen columns">
+
+			<div class="eight columns alpha">
+
+				<div class="copyright">
+					Copyright &copy; 2013. ThemeMakers. All rights reserved
+				</div><!--/ .copyright-->
+
+				<div class="developed">
+					Developed by <a href="#">ThemeMakers</a>
+				</div><!--/ .developed-->
+
+			</div><!--/ .columns-->
+
+			<div class="eight columns omega">
+
+				<ul class="social-icons">
+					<li class="twitter"><a target="_blank" href="https://twitter.com/ThemeMakers"><span>Twitter</span></a></li>
+					<li class="facebook"><a target="_blank" href="http://www.facebook.com/wpThemeMakers"><span>Facebook</span></a></li>
+					<li class="dribble"><a target="_blank" href="http://dribbble.com/"><span>Dribbble</span></a></li>
+					<li class="vimeo"><a target="_blank" href="https://vimeo.com/"><span>Vimeo</span></a></li>
+					<li class="youtube"><a target="_blank" href="http://www.youtube.com/"><span>Youtube</span></a></li>
+					<li class="instagram"><a target="_blank" href="http://www.instagram.com/"><span>Instagram</span></a></li>
+					<li class="rss"><a target="_blank" href="#"><span>Rss</span></a></li>
+				</ul><!--/ .social-icons-->	
+
+			</div><!--/ .columns-->
+
+		</div><!--/ .columns-->
+
+	</div><!--/ .container-->
+
+</footer><!--/ #footer-->
+
+<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->			
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/jquery.cycle.all.min.js"></script>
+<script src="js/jquery.jflickrfeed.min.js"></script>
+<!--For Touch Devices-->
+<script src="js/jquery.touchswipe.min.js"></script>
+<!--end Touch Devices-->
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/config.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

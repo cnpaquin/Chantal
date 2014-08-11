@@ -1,216 +1,331 @@
-<script type="text/javascript">
-
-	function onLoading() {
-		
-		var doc = document,
-			header = doc.getElementById('header');
-			
-		if (header == null) {
-			
-			var href = doc.location.href,
-				hrefsplit = href.split('/'),
-				lastitem = hrefsplit[hrefsplit.length-1];
-				doc.cookie = null;
-				doc.cookie = 'href=' + lastitem;
-			doc.location.href = 'index.html';
-		} else {
-			return true;
-		}
-		
-	}
+<!DOCTYPE html>
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<head>
+	<!-- Google Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Allura|Oswald:400,700,300' rel='stylesheet' type='text/css'>
 	
-	window.onload = onLoading;
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
 	
-</script>
-
-<style type="text/css">
+	<title>Almera | Image Gallery</title>
 	
-	.ajax { display: none; }
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut" href="images/favicon.ico" />
 	
-	.loader {
-		position: fixed;
-		left: 50%;
-		z-index: 50;
-		top: 50%;
-		margin: -25px 0 0 -25px;
-		width: 55px;
-		height: 55px;
-		filter: alpha(opacity = 0);
-		background-image: url(images/ajax-loader.gif);
-		background-repeat: no-repeat;
-	}
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-</style>
-
-<div class="loader"></div>
-
-<!-- - - - - - - - - - - - - - Container - - - - - - - - - - - - - - - - -->	
-
-<div class="container ajax">
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/layout.css" />
 	
-	<div class="page-header">
-		<h1>Sharing <br /> our emotions</h1>
-	</div><!--/ .page-header-->	
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" />
+
+	<!-- HTML5 Shiv
+	================================================== -->
+	<script src="js/jquery.modernizr.js"></script>
 	
-	<div class="sixteen columns">
-		
-		<div class="cycle-slider">
-			<ul>
-				<li><img src="images/cycleslides/slide-1.jpg" alt="" /></li>
-				<li><img src="images/cycleslides/slide-2.jpg" alt="" /></li>
-				<li><img src="images/cycleslides/slide-3.jpg" alt="" /></li>
-				<li><img src="images/cycleslides/slide-4.jpg" alt="" /></li>
-			</ul>			
-		</div><!--/ .cycle-slider-->	
-
-	</div><!--/ .columns-->
+</head>
+<body>
 	
-	<div class="divider-solid"></div>
+<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->	
+
+<header id="header">
+
+	<div class="container">
+
+		<div class="sixteen columns">
+
+			<div id="logo">
+				<h1><a href="index.html">Almera</a></h1>
+			</div><!--/ #logo-->
+
+			<nav id="navigation" class="navigation">
+
+				<div class="menu">
+
+					<ul>
+						<li><a href="index.html">Home</a>
+							<ul>
+								<li><a href="index.html">Home Grid 1</a></li>
+								<li><a href="index4.html">Home Grid 2</a></li>
+								<li><a href="index5.html">Fullscreen</a></li>
+								<li><a href="masonry.html">Masonry</a></li>
+							</ul>
+						</li>
+						<li class="current-menu-item"><a href="image-gallery.html">Gallery</a>
+							<ul>
+								<li class="current-menu-item"><a href="image-gallery.html">Image Gallery</a></li>
+								<li><a href="thumbnails.html">Thumbnails</a></li>
+								<li><a href="gallery-3-columns.html">3 Columns</a></li>
+								<li><a href="gallery-4-columns.html">4 Columns</a></li>
+							</ul>
+						</li>
+						<li><a href="albums.html">Albums</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="elements.html">Features</a>
+							<ul>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="columns.html">Columns</a></li>
+								<li><a href="typography.html">Typography</a></li>
+							</ul>
+						</li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+
+				</div><!--/ .menu-->
+
+			</nav><!--/ #navigation-->	
+
+		</div><!--/ .columns-->
+
+	</div><!--/ .container-->
+
+</header><!--/ #header-->
+
+<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->	
+
+
+<!-- - - - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->	
+
+<div id="wrapper" class="sbr">
 	
-	<h3 class="section-title">Recent Projects</h3>
+	<div id="content">
+
+		<div class="container">
+
+			<div class="page-header">
+				<h1>Sharing <br /> our emotions</h1>
+			</div><!--/ .page-header-->	
+
+			<div class="sixteen columns">
+
+				<div class="cycle-slider">
+					<ul>
+						<li><img src="images/cycleslides/slide-1.jpg" alt="" /></li>
+						<li><img src="images/cycleslides/slide-2.jpg" alt="" /></li>
+						<li><img src="images/cycleslides/slide-3.jpg" alt="" /></li>
+						<li><img src="images/cycleslides/slide-4.jpg" alt="" /></li>
+					</ul>			
+				</div><!--/ .cycle-slider-->	
+
+			</div><!--/ .columns-->
+
+			<div class="divider-solid"></div>
+
+			<h3 class="section-title">Recent Projects</h3>
+
+			<section class="recent-projects">
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/2.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/1.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Fashion Model Vintage Image</h6>
+							<span class="categories">Fashion / Photography</span>
+						</a>	
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/15.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/2.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Swinning Bride</h6>
+							<span class="categories">Wedding / Photography</span>
+						</a>	
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/3.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/3.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Beautiful Woman Wearing Jewelry</h6>
+							<span class="categories">Fashion / Photography</span>
+						</a>		
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/23.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/4.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Big Window Wall</h6>
+							<span class="categories">Interior / Design</span>
+						</a>	
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/9.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/5.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Beautiful Fashion Model</h6>
+							<span class="categories">Fashion / Photography</span>
+						</a>	
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/16.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/6.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Bride with Bridesmaids</h6>
+							<span class="categories">Wedding / Photography</span>
+						</a>	
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/24.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/7.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Room Interior</h6>
+							<span class="categories">Interior / Design</span>
+						</a>		
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+				<article class="four columns">
+
+					<div class="project-thumb">
+
+						<a href="images/full/20.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
+							<img alt="" src="images/gallery/8.jpg">
+						</a>
+
+						<a href="gallery-single.html" class="project-meta">
+							<h6 class="title">Blond Fashion Model</h6>
+							<span class="categories">Wedding / Photography</span>
+						</a>	
+
+					</div><!--/ .project-thumb-->
+
+				</article><!--/ .columns-->	
+
+			</section><!--/ .recent-projects-->
+
+		</div><!--/ .container-->
+
+	</div><!--/ #content-->
 	
-	<section class="recent-projects">
-		
-		<article class="four columns">
+</div><!--/ #wrapper-->
 
-			<div class="project-thumb">
-
-				<a href="images/full/2.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/1.jpg">
-				</a>
-
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Fashion Model Vintage Image</h6>
-					<span class="categories">Fashion / Photography</span>
-				</a>	
-				
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/15.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/2.jpg">
-				</a>
-				
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Swinning Bride</h6>
-					<span class="categories">Wedding / Photography</span>
-				</a>	
-
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/3.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/3.jpg">
-				</a>
-				
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Beautiful Woman Wearing Jewelry</h6>
-					<span class="categories">Fashion / Photography</span>
-				</a>		
-
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/23.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/4.jpg">
-				</a>
-				
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Big Window Wall</h6>
-					<span class="categories">Interior / Design</span>
-				</a>	
-
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/9.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/5.jpg">
-				</a>
-
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Beautiful Fashion Model</h6>
-					<span class="categories">Fashion / Photography</span>
-				</a>	
-				
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/16.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/6.jpg">
-				</a>
-				
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Bride with Bridesmaids</h6>
-					<span class="categories">Wedding / Photography</span>
-				</a>	
-
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/24.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/7.jpg">
-				</a>
-				
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Room Interior</h6>
-					<span class="categories">Interior / Design</span>
-				</a>		
-
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-		<article class="four columns">
-
-			<div class="project-thumb">
-
-				<a href="images/full/20.jpg" class="single-image plus-icon animTop" title="" rel="gallery">
-					<img alt="" src="images/gallery/8.jpg">
-				</a>
-				
-				<a href="gallery-single.html" class="project-meta">
-					<h6 class="title">Blond Fashion Model</h6>
-					<span class="categories">Wedding / Photography</span>
-				</a>	
-
-			</div><!--/ .project-thumb-->
-
-		</article><!--/ .columns-->	
-		
-	</section><!--/ .recent-projects-->
-	
-</div><!--/ .container-->
+<!-- - - - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->	
 
 
-<!-- - - - - - - - - - - - - end Container - - - - - - - - - - - - - - - - -->		
+<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->	
 
+<footer id="footer">
+
+	<div class="container">
+
+		<div class="sixteen columns">
+
+			<div class="eight columns alpha">
+
+				<div class="copyright">
+					Copyright &copy; 2013. ThemeMakers. All rights reserved
+				</div><!--/ .copyright-->
+
+				<div class="developed">
+					Developed by <a href="#">ThemeMakers</a>
+				</div><!--/ .developed-->
+
+			</div><!--/ .columns-->
+
+			<div class="eight columns omega">
+
+				<ul class="social-icons">
+					<li class="twitter"><a target="_blank" href="https://twitter.com/ThemeMakers"><span>Twitter</span></a></li>
+					<li class="facebook"><a target="_blank" href="http://www.facebook.com/wpThemeMakers"><span>Facebook</span></a></li>
+					<li class="dribble"><a target="_blank" href="http://dribbble.com/"><span>Dribbble</span></a></li>
+					<li class="vimeo"><a target="_blank" href="https://vimeo.com/"><span>Vimeo</span></a></li>
+					<li class="youtube"><a target="_blank" href="http://www.youtube.com/"><span>Youtube</span></a></li>
+					<li class="instagram"><a target="_blank" href="http://www.instagram.com/"><span>Instagram</span></a></li>
+					<li class="rss"><a target="_blank" href="#"><span>Rss</span></a></li>
+				</ul><!--/ .social-icons-->	
+
+			</div><!--/ .columns-->
+
+		</div><!--/ .columns-->
+
+	</div><!--/ .container-->
+
+</footer><!--/ #footer-->
+
+<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->			
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/jquery.cycle.all.min.js"></script>
+<!--For Touch Devices-->
+<script src="js/jquery.touchswipe.min.js"></script>
+<!--end Touch Devices-->
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/config.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

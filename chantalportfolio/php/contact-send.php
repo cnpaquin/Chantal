@@ -3,7 +3,7 @@
 if (isset($_REQUEST['action'])) {
 	if ($_REQUEST['action'] == "contact_form_request") {
 
-		$ourMail = "support@webtemplatemasters.com";
+		$ourMail = "support@webtemplatemasters.com"; 
 
 		$required_fields = array("name", "email", "message");
 		$pre_messagebody_info = "";
@@ -45,6 +45,7 @@ if (isset($_REQUEST['action'])) {
 
 		$pre_messagebody_info.="<strong>Name</strong>" . ": " . $data['name'] . "<br />";
 		$pre_messagebody_info.="<strong>E-mail</strong>" . ": " . $data['email'] . "<br />";
+		$pre_messagebody_info.="<strong>Website</strong>" . ": " . $data['website'] . "<br />";
 
 		$headers = 'MIME-Version: 1.0' . "\r\n";
 		$headers.= 'Content-type: text/html; charset=UTF-8' . "\r\n";
