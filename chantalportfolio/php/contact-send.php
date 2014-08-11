@@ -3,7 +3,7 @@
 if (isset($_REQUEST['action'])) {
 	if ($_REQUEST['action'] == "contact_form_request") {
 
-		$ourMail = "support@webtemplatemasters.com"; 
+		$ourMail = "cn.paquin@gmail.com"; 
 
 		$required_fields = array("name", "email", "message");
 		$pre_messagebody_info = "";

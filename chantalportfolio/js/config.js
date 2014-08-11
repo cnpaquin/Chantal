@@ -17,10 +17,11 @@
 	/* ---------------------------------------------------- */
 
 	var objGoogleMap = {
-		address: 'New York, USA', // City, County
+		address: 'London, Canada', // City, County
 		markers: [
-			{'address' : 'Grand St, New York'} // Street
+			{'address' : 'Richmond st, Oxford st'} // Street
 		],
+//        map.addOverlay(new GMarker(bounds.getCenter()));
 		zoom: 14 // 0 - 21
 	};
 
@@ -91,7 +92,7 @@
 	/* ---------------------------------------------------- */
 
 	var resizeGrid = {
-		cursorcolor: '#ff8b84'
+		cursorcolor: '#FFDB51'
 	};
 
 /* ---------------------------------------------------------------------- */
