@@ -17,7 +17,7 @@
 	$.Resize.defaults = {
 		speed : 300,
 		gutter : 2,
-		cursorcolor : "#ff8b84"
+		cursorcolor : "#FFAD00"
 	};
 
 	$.Resize.prototype = {

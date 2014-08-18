@@ -152,13 +152,13 @@ img {
 b { color: #5a5d60; }
 
 ::-moz-selection {
-    /*ff8b84*/
-	background-color: #ff8b84;
+    /*FFAD00*/
+	background-color: #FFAD00;
 	color: #fff;
 }
 
 ::selection {
-	background-color: #ff8b84;
+	background-color: #FFAD00;
 	color: #fff;
 }
 
@@ -310,7 +310,7 @@ body {
 	}
 
 	.dropcap.circle {
-		background-color: #ff8b84;
+		background-color: #FFAD00;
 		color: #fff;
 		
 		-webkit-border-radius: 50%;
@@ -330,7 +330,7 @@ body {
 		line-height: 40px;
 		font-weight: 700;
 		font-family: 'Oswald', sans-serif;	
-		background-color: #ff8b84;
+		background-color: #FFAD00;
 		color: #fff;
 		
 		-webkit-border-radius: 50%;
@@ -346,7 +346,7 @@ body {
 		position: relative;
 		margin-bottom: 35px;
 		padding-left: 45px;
-		color: #ff8b84;
+		color: #FFAD00;
 		font-size: 29px;
 		font-weight: 400;
 		font-family: 'Allura', cursive;
@@ -370,7 +370,7 @@ body {
 		content: '”';
 		font-weight: 400;
 		font-size: 120px;
-		color: #ff8b84;
+		color: #FFAD00;
 		line-height: .9;
 	}
 	
@@ -420,7 +420,7 @@ body {
 			margin: -30px 0 0 -30px;
 			height: 60px;
 			width: 60px;
-			background-color: #ff8b84;
+			background-color: #FFAD00;
 			background-color: rgba(255, 139, 132, 0.6);
 			opacity: 0;
 			filter: alpha(opacity = 0);
@@ -718,7 +718,7 @@ body {
 				.contact-form input[type="submit"] {
 					display: inline-block;
 					padding: 8px 15px;
-					background-color: #ff8b84;
+					background-color: #FFAD00;
 					color: #fff;
 					border-radius: 0;
 					font-family: 'Oswald', Arial;
@@ -778,7 +778,7 @@ body {
 		font-size: 14px;
 	} 
 	
-	.button.default		{ background-color: #ff8b84; }
+	.button.default		{ background-color: #FFAD00; }
 	.button.cyan		{ background-color: #5ac1ca; }
 	.button.turquoise   { background-color: #65bfb3; }
 	.button.green		{ background-color: #85c966; }
@@ -903,7 +903,7 @@ body {
 
 			#logo a { 
 				display: block;
-				color: #ff8b84;
+				color: #FFAD00;
 				font-family: 'Allura', cursive;
 				line-height: 1;
 			}
@@ -959,7 +959,7 @@ body {
 				padding: 0;
 				width: 100%;
 				height: 2px;
-				background-color: #ff8b84;
+				background-color: #FFAD00;
 				font: 0/0 a;
 			}
 			
@@ -1012,7 +1012,7 @@ body {
 					.navigation > div > ul ul li.current_page_parent > a,
 					.navigation > div > ul ul li.current_page_ancestor > a { 
 						background-color: #fcfcfc;
-						color: #ff8b84;
+						color: #FFAD00;
 					}
 					
 			/* Sub Dropdown */
@@ -1283,7 +1283,7 @@ body {
 		.entry-date a {
 			display: block;
 			padding: 7px 0;
-			background-color: #ff8b84;
+			background-color: #FFAD00;
 		}
 		
 		.entry-date .entry-day {
@@ -1322,7 +1322,7 @@ body {
 				text-transform: uppercase;
 			}
 			
-			.entry .title a:hover { color: #ff8b84; }
+			.entry .title a:hover { color: #FFAD00; }
 			
 		/* Entry Button */
 
@@ -1330,7 +1330,7 @@ body {
 			margin: 0;
 			padding: 0;
 			background-color: transparent;
-			color: #ff8b84;
+			color: #FFAD00;
 			font-size: 13px;
 			font-weight: 700;
 		}
@@ -1527,7 +1527,7 @@ body {
 							}
 
 							.comment .comment-reply-link {
-								color: #ff8b84;
+								color: #FFAD00;
 								font-size: 11px;
 							}
 
@@ -1571,7 +1571,7 @@ body {
 
 		.wp-pagenavi .page-numbers:hover,
 		.wp-pagenavi .current {
-			background-color: #ff8b84;
+			background-color: #FFAD00;
 			color: #fff;
 			
 			-webkit-border-radius: 50%;
@@ -1619,7 +1619,7 @@ body {
 		}
 		
 		.scroll-box-nav .active > a,
-		.scroll-box-nav li:hover > a { color: #ff8b84; }
+		.scroll-box-nav li:hover > a { color: #FFAD00; }
 
 /* end Scroll Box Nav */ 
 		
@@ -2075,7 +2075,7 @@ body {
 
 			.page-header .tp-back:hover,
 			.page-header .th-back:hover {
-				border-color: #ff8b84;
+				border-color: #FFAD00;
 				border-color: rgba(255,139,132, .6);
 
 				-webkit-animation: .35s linear normal rotate;
@@ -2086,7 +2086,7 @@ body {
 
 			.page-header .tp-back:hover:before,
 			.page-header .th-back:hover:before {
-				color: #ff8b84;
+				color: #FFAD00;
 				color: rgba(255,139,132, .6);
 			}
 
@@ -2237,12 +2237,12 @@ body {
 				}
 				
 				.activeSlider #controls a:hover {
-					border-color: #ff8b84;
+					border-color: #FFAD00;
 					border-color: rgba(255,139,132, .6);
 				}
 
 				.activeSlider #controls a:hover:before {
-					color: #ff8b84;
+					color: #FFAD00;
 					color: rgba(255,139,132, .6);
 				}
 				
@@ -2382,7 +2382,7 @@ body {
 		
 		.widget_tag_cloud .tagcloud a:hover { 
 			color: #fff !important;
-			background-color: #ff8b84;
+			background-color: #FFAD00;
 		}
 			
 /* ---------------------------------------------------------------------- */
@@ -2590,14 +2590,14 @@ body {
 			
 			.acc-trigger:hover:before,
 			.acc-trigger.active a,
-			.acc-trigger:hover a { color: #ff8b84; }
+			.acc-trigger:hover a { color: #FFAD00; }
 			
 		
 			.acc-trigger.active:before {
 				-webkit-transform: rotate(90deg);
 					-ms-transform: rotate(90deg);
 						transform: rotate(90deg);
-				color: #ff8b84;
+				color: #FFAD00;
 			}
 			
 			.acc-box.type-2 .acc-trigger.active:before {
@@ -2633,7 +2633,7 @@ body {
 			.tabs-nav li a {
 				display: inline-block;
 				padding: 10px 25px;
-				background-color: #ff8b84;
+				background-color: #FFAD00;
 				outline: none;
 				color: #fff;
 				vertical-align: baseline;
@@ -2800,7 +2800,7 @@ body {
 			}
 
 			.widget_calendar  #today { 
-				background-color: #ff8b84;
+				background-color: #FFAD00;
 				color: #fff;
 			}
 
@@ -2845,7 +2845,7 @@ body {
 				}
 				
 				.widget_calendar tfoot a:hover {
-					border-color: #ff8b84;
+					border-color: #FFAD00;
 					border-color: rgba(255, 139, 132, 0.6);
 					background-color: #fff;
 					background-color: rgba(255,255,255,.9);
@@ -2870,7 +2870,7 @@ body {
 				.widget_calendar tfoot #next a:after { content: "\f054"; transform: translateX(0); -ms-transform: translateX(0); }	
 				
 				.widget_calendar tfoot a:hover:after { 
-					color: #ff8b84;
+					color: #FFAD00;
 					color: rgba(255, 139, 132, 0.6);
 				} 
 													   
@@ -2917,12 +2917,12 @@ body {
 		}	
 		
 		.flickr-badge li a:hover:after {
-			-webkit-box-shadow: inset 0 0 0 3px #ff8b84;
-			   -moz-box-shadow: inset 0 0 0 3px #ff8b84;
-					box-shadow: inset 0 0 0 3px #ff8b84;
+			-webkit-box-shadow: inset 0 0 0 3px #FFAD00;
+			   -moz-box-shadow: inset 0 0 0 3px #FFAD00;
+					box-shadow: inset 0 0 0 3px #FFAD00;
 		}
 		
-		.ie8 .flickr-badge li a:hover { border-color: #ff8b84; }
+		.ie8 .flickr-badge li a:hover { border-color: #FFAD00; }
 		
 	/* -------------------------------------------------- */
 	/*	Testimonials
@@ -3036,12 +3036,12 @@ body {
 	}
 	
 	#back-top:hover { 
-		border-color: #ff8b84;
+		border-color: #FFAD00;
 		border-color: rgba(255,139,132, .6);
 	}
 	
 	#back-top:hover:before {
-		color: #ff8b84;
+		color: #FFAD00;
 		color: rgba(255,139,132, .6);
 	}
 	
