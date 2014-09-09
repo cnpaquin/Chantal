@@ -62,7 +62,7 @@
 
 				<div class="cycle-slider">
 					<ul>
-						<li><img src="images/Blizzard/BLIZZARD%20WORKSTATION.jpg" alt="" /></li>
+						<li><img src="images/OptometryOffice/" alt="" /></li>
 						<li><img src="images/Blizzard/BLIZZARD%20PRESIDENT.jpg" alt="" /></li>
 					</ul>			
 				</div><!--/ .cycle-slider-->	
