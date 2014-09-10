@@ -76,7 +76,7 @@
                                 <a class="single-image plus-icon animTop" href="images/SmallOffice/SmallOffice-ARCHITECTURAL.jpg" rel="Small Office">
                                     <img src="images/SmallOffice/SmallOffice-ARCHITECTURAL%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Achitectural Floor Plan</h6>
                                     <span class="categories">Small Office</span>
                                 </a>
@@ -87,7 +87,7 @@
                                     <a class="single-image plus-icon animTop" href="images/SmallOffice/SmallOffice-FUNITURE%20FIXTURE.jpg" rel="Small Office">
                                         <img src="images/SmallOffice/SmallOffice-FUNITURE%20FIXTURE%20-%20Copy.jpg" />
                                     </a>
-                                    <a href="gallery-single.html" class="project-meta">
+                                    <a href="#" class="project-meta">
                                         <h6 class="title">Furniture Fixture</h6>
                                         <span class="categories">Small Office</span>
                                     </a>
@@ -100,7 +100,7 @@
                                 <a class="single-image plus-icon animTop" href="images/SmallOffice/SmallOffice-CEILING%20PLAN.jpg" rel="Small Office">
                                     <img src="images/SmallOffice/SmallOffice-CEILING%20PLAN%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Ceiling Plan</h6>
                                     <span class="categories">Small Office</span>
                                 </a>
@@ -112,7 +112,7 @@
                                 <a class="single-image plus-icon animTop" href="images/OptometryOffice/ArchitecturalPlan.jpg" rel="Optometry Office">
                                     <img src="images/OptometryOffice/ArchitecturalPlan%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Architectural Plan</h6>
                                     <span class="categories">Optometry Office</span>
                                 </a>
@@ -124,7 +124,7 @@
                                 <a class="single-image plus-icon animTop" href="images/OptometryOffice/CeilingPlan.jpg" rel="Optometry Office">
                                     <img src="images/OptometryOffice/CeilingPlan%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Ceiling Plan</h6>
                                     <span class="categories">Optometry Office</span>
                                 </a>
@@ -136,7 +136,7 @@
                                 <a class="single-image plus-icon animTop" href="images/OptometryOffice/Elevations1.jpg" rel="Optometry Office">
                                     <img src="images/OptometryOffice/Elevations1%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Elevations #1</h6>
                                     <span class="categories">Optometry Office</span>
                                 </a>
@@ -148,79 +148,78 @@
                                 <a class="single-image plus-icon animTop" href="images/OptometryOffice/Elevations2.jpg" rel="Optometry Office">
                                     <img src="images/OptometryOffice/Elevations2%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Elevations #2</h6>
                                     <span class="categories">Optometry Office</span>
                                 </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
-                      <li data-pile="Mulberry Residence">
+                        <li data-pile="Mulberry Residence">
                             <div class="project-thumb">
                                 <a class="single-image plus-icon animTop" href="images/MulberryResidence/MullberryFloorPlan.jpg" rel="Mulberry Residence">
-                                    <img src="images/MulberryResidence/Mullberry%20Architectural&RCPCopy.jpg" />
+                                    <img src="images/MulberryResidence/MullberryFloorPlanCopy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
-                                    <h6 class="title">Elevations #2</h6>
-                                    <span class="categories">Optometry Office</span>
+                                <a href="#" class="project-meta">
+                                    <h6 class="title">Floor Plan</h6>
+                                    <span class="categories">Mulberry Residence</span>
                                 </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
-                     <li data-pile="Mulberry Residence">
+                        <li data-pile="Mulberry Residence">
                             <div class="project-thumb">
                                 <a class="single-image plus-icon animTop" href="images/MulberryResidence/Mullberry%20Architectural&RCP.jpg" rel="Mulberry Residence">
                                     <img src="images/MulberryResidence/Mullberry%20Architectural&RCPCopy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
-                                    <h6 class="title">Elevations #2</h6>
-                                    <span class="categories">Optometry Office</span>
+                                <a href="#" class="project-meta">
+                                    <h6 class="title">Achitectural Plan</h6>
+                                    <span class="categories">Mulberry Residence</span>
                                 </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
-                     <li data-pile="Mulberry Cafe">
+                        <li data-pile="Mulberry Cafe">
                             <div class="project-thumb">
-                                <a class="single-image plus-icon animTop" href="images/Mulberry%2520Cafe/CafeArchitectural.jpg" rel="Mulberry Cafe">
-                                    <img src="images/Mulberry%2520Cafe/CafeArchitecturalCopy.jpg" />
+                                <a class="single-image plus-icon animTop" href="images/MulberryCafe/CafeArchitectural.jpg" rel="Mulberry Cafe">
+                                    <img src="images/MulberryCafe/CafeArchitecturalCopy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
-                                    <h6 class="title">Elevations #2</h6>
-                                    <span class="categories">Optometry Office</span>
+                                <a href="#" class="project-meta">
+                                    <h6 class="title">Achitectural Plan</h6>
+                                    <span class="categories">Mulberry Cafe</span>
                                 </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
-                     <li data-pile="Mulberry Cafe">
+                        <li data-pile="Mulberry Cafe">
                             <div class="project-thumb">
-                                <a class="single-image plus-icon animTop" href="images/Mulberry%2520Cafe/CafeFurnitureFixture.jpg" rel="Mulberry Cafe">
-                                    <img src="images/Mulberry%2520Cafe/CafeFurnitureFixtureCopy.jpg" />
+                                <a class="single-image plus-icon animTop" href="images/MulberryCafe/CafeFurnitureFixture.jpg" rel="Mulberry Cafe">
+                                    <img src="images/MulberryCafe/CafeFurnitureFixtureCopy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
-                                    <h6 class="title">Elevations #2</h6>
-                                    <span class="categories">Optometry Office</span>
+                                <a href="#" class="project-meta">
+                                    <h6 class="title">Furniture Fixture Plan</h6>
+                                    <span class="categories">Mulberry Cafe</span>
                                 </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
-                     <li data-pile="Mulberry Cafe">
+                        <li data-pile="Mulberry Cafe">
                             <div class="project-thumb">
-                                <a class="single-image plus-icon animTop" href="images/Mulberry%2520Cafe/CafeRCP.jpg"el="Mulberry Cafe">
-                                    <img src="images/Mulberry%2520Cafe/CafeRCPCopy.jpg"
-                                </a>
-                                <a href="gallery-single.html" class="project-meta">
-                                    <h6 class="title">Elevations #2</h6>
-                                    <span class="categories">Optometry Office</span>
-                                </a>
+                                <a class="single-image plus-icon animTop" href="images/MulberryCafe/CafeRCP.jpg" el="Mulberry Cafe">
+                                    <img src="images/MulberryCafe/CafeRCPCopy.jpg" </a>
+                                    <a href="#" class="project-meta">
+                                        <h6 class="title">Reflected Ceiling Plan</h6>
+                                        <span class="categories">Mulberry Cafe</span>
+                                    </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
-                      <li data-pile="Millwork">
+                        <li data-pile="Millwork">
                             <div class="project-thumb">
                                 <a class="single-image plus-icon animTop" href="images/Millwork/RECEPTIONDESKMILLWORK.jpg" rel="Millwork">
                                     <img src="images/Millwork/RECEPTIONDESKMILLWORK%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Reception Desk</h6>
                                     <span class="categories">Millwork</span>
                                 </a>
@@ -232,7 +231,7 @@
                                 <a class="single-image plus-icon animTop" href="images/Millwork/KitchenMillwork.jpg" rel="Millwork">
                                     <img src="images/Millwork/KitchenMillwork%20-%20Copy.jpg" />
                                 </a>
-                                <a href="gallery-single.html" class="project-meta">
+                                <a href="#" class="project-meta">
                                     <h6 class="title">Kitchen</h6>
                                     <span class="categories">Millwork</span>
                                 </a>
