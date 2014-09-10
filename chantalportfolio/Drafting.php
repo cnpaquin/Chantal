@@ -206,7 +206,7 @@
                         <li data-pile="Mulberry Cafe">
                             <div class="project-thumb">
                                 <a class="single-image plus-icon animTop" href="images/MulberryCafe/CafeRCP.jpg" el="Mulberry Cafe">
-                                    <img src="images/MulberryCafe/CafeRCPCopy.jpg" </a>
+                                    <img src="images/MulberryCafe/CafeRCPCopy.jpg"> </a>
                                     <a href="#" class="project-meta">
                                         <h6 class="title">Reflected Ceiling Plan</h6>
                                         <span class="categories">Mulberry Cafe</span>
