@@ -205,15 +205,17 @@
                         </li>
                         <li data-pile="Mulberry Cafe">
                             <div class="project-thumb">
-                                <a class="single-image plus-icon animTop" href="images/MulberryCafe/CafeRCP.jpg" el="Mulberry Cafe">
-                                    <img src="images/MulberryCafe/CafeRCPCopy.jpg"> </a>
-                                    <a href="#" class="project-meta">
-                                        <h6 class="title">Reflected Ceiling Plan</h6>
-                                        <span class="categories">Mulberry Cafe</span>
-                                    </a>
+                                <a class="single-image plus-icon animTop" href="images/MulberryCafe/CafeRCP.jpg" rel="Mulberry Cafe">
+                                    <img src="images/MulberryCafe/CafeRCPCopy.jpg" />
+                                </a>
+                                <a href="#" class="project-meta">
+                                    <h6 class="title">Furniture Fixture Plan</h6>
+                                    <span class="categories">Mulberry Cafe</span>
+                                </a>
                             </div>
                             <!--/ .project-thumb-->
                         </li>
+
                         <li data-pile="Millwork">
                             <div class="project-thumb">
                                 <a class="single-image plus-icon animTop" href="images/Millwork/RECEPTIONDESKMILLWORK.jpg" rel="Millwork">
