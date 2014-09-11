@@ -231,7 +231,7 @@
                         <li data-pile="Millwork">
                             <div class="project-thumb">
                                 <a class="single-image plus-icon animTop" href="images/Millwork/KitchenMillwork.jpg" rel="Millwork">
-                                    <img src="images/Millwork/KitchenMillwork%20-%20Copy.jpg" />
+                                    <img src="images/Millwork/KitchenMillworkCopy.jpg" />
                                 </a>
                                 <a href="#" class="project-meta">
                                     <h6 class="title">Kitchen</h6>
